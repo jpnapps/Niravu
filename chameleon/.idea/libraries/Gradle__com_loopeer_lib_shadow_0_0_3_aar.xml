@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.loopeer.lib:shadow:0.0.3@aar">
+    <CLASSES>
+      <root url="jar://D:/jp_android_sys/Gradleconfig/caches/transforms-2/files-2.1/77ddd95ebd9dd70061361eee535fae2b/jars/classes.jar!/" />
+      <root url="file://D:/jp_android_sys/Gradleconfig/caches/transforms-2/files-2.1/77ddd95ebd9dd70061361eee535fae2b/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://D:/jp_android_sys/Gradleconfig/caches/modules-2/files-2.1/com.loopeer.lib/shadow/0.0.3/85632e9d1d79c9bea880968c850957d4bffcb925/shadow-0.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jpndev.niravu">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".JpApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.App"
+        android:usesCleartextTraffic="true"
+        tools:ignore="LockedOrientationActivity"
+        tools:replace="android:icon,allowBackup,android:theme">
+        <activity android:name=".dream.DMatchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.App"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"
+            >
+
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
+        <activity
+            android:name=".dream.DGroupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.App"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".home.Detail5Activity2"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.App"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".home.Detail1Activity2"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.App"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".home.List1Activity2"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.App"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".home.Grid1Activity2"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.App"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".quiz.QuizViewAnswersActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.App"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".quiz.QuizResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.App"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".quiz.QuizActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.App"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".home.List1Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.App"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".home.Grid1Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.App"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".gaming.Game1PlayActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Base.Theme.App"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".home.ModesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.App"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".home.Detail1Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.App"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".register.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.App"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".register.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.App"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".home.Detail5Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.App"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".home.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.App"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" /> <!-- tools:ignore="LockedOrientationActivity" -->
+        <activity
+            android:name=".home.TempActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.App"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".home.FormActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.App"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <!--
+   <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        -->
+        <!-- android:theme="@style/SplashTheme" -->
+        <activity
+            android:name=".home.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.App">
+           <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".base.WebActivitykt"
+            android:launchMode="singleTask"
+            android:theme="@style/Base.Theme.App"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".ScrollingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.App"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+    </application>
+
+</manifest>

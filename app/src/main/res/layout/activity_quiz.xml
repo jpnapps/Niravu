@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Base_Home"
+    android:id="@+id/top_clay"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quiz.QuizActivity">
+
+    <!--    android:descendantFocusability="blocksDescendants"-->
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/g_top"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_xleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_xright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+    <com.jpndev.utilitylibrary.DeviceFitImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/index_dimv"
+        app:layout_constraintLeft_toRightOf="@+id/guideline_xleft"
+
+        app:layout_constraintTop_toBottomOf="@+id/g_top"
+        android:layout_marginTop="0dp"
+        android:visibility="visible"
+        android:layout_marginRight="4dp"
+        android:src="@drawable/ic_drawer"
+        android:tint="?attr/tint_1"
+
+        app:height_percentage="35"
+        app:width_percentage="6"
+        android:scaleType="fitCenter"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/index_txv"
+        android:layout_marginTop="0dp"
+        android:layout_width="wrap_content"
+android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/index_dimv"
+
+        app:layout_constraintTop_toBottomOf="@+id/g_top"
+android:text="@string/digit_text"
+        style="@style/Base_TXV_1"
+        android:textSize="@dimen/_14ssp"
+
+        />
+
+    <TextView
+        android:id="@+id/timer_txv"
+        android:layout_marginTop="0dp"
+        android:layout_width="wrap_content"
+app:layout_constraintHorizontal_bias="0.36"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/index_txv"
+        app:layout_constraintRight_toLeftOf="@+id/guideline_xright"
+        app:layout_constraintTop_toBottomOf="@+id/g_top"
+        android:text="@string/timer_text"
+        style="@style/Base_TXV_1"
+        android:textSize="@dimen/_14ssp"
+
+        />
+    <com.jpndev.utilitylibrary.DeviceFitImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/json_req_dimv"
+        app:layout_constraintTop_toBottomOf="@+id/g_top"
+        app:layout_constraintRight_toLeftOf="@+id/guideline_xright"
+        android:layout_marginTop="0dp"
+        android:visibility="gone"
+        android:layout_marginRight="4dp"
+        android:src="@drawable/ic_content_copy_black_24dp"
+android:tint="?attr/tint_1"
+
+        app:height_percentage="35"
+        app:width_percentage="6"
+        android:scaleType="fitCenter"
+        android:layout_height="wrap_content" />
+
+
+
+
+    <androidx.constraintlayout.widget.Barrier
+        app:constraint_referenced_ids="timer_txv,index_txv"
+        android:id="@+id/line_barrier"
+        app:barrierDirection="bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <View
+        android:id="@+id/top_line_view"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_width="match_parent"
+android:background="?attr/bg_border_1"
+        android:layout_height="@dimen/_2sdp"
+
+        app:layout_constraintTop_toBottomOf="@+id/line_barrier"
+        android:text="@string/timer_text"
+        style="@style/Base_TXV_1"
+        android:textSize="@dimen/_14ssp"
+
+        />
+<!--    <TextView
+        android:id="@+id/question_txv"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/guideline_xleft"
+        app:layout_constraintRight_toLeftOf="@+id/guideline_xright"
+        app:layout_constraintTop_toBottomOf="@+id/top_line_view"
+
+        style="@style/Base_TXV_1"
+        android:textSize="@dimen/_18ssp"
+
+        />-->
+
+    <xyz.sangcomz.chameleon.Chameleon
+        android:id="@+id/chameleon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingLeft="@dimen/_4sdp"
+        android:paddingRight="@dimen/_2sdp"
+
+        app:layout_constraintTop_toBottomOf="@+id/top_line_view"
+        app:layout_constraintBottom_toTopOf="@+id/submit_btn"
+        app:layout_constraintLeft_toRightOf="@+id/qs_no_chameleon"
+        app:layout_constraintRight_toLeftOf="@+id/guideline_xright"
+
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_1sdp"
+        android:layout_marginRight="@dimen/_1sdp"
+        android:layout_gravity="center"
+        android:visibility="visible"
+
+
+        app:emptyButtonText="\t Tap to Refresh \t"
+        app:emptyButtonTextColor="@color/white"
+        app:emptyButtonBackgroundColor="@color/cursor1_color"
+        app:emptyButtonTextSize="12sp"
+        app:emptyDrawable="@drawable/ict_chamelon_error2"
+        app:emptySubText=""
+        app:emptyTextGravity="center"
+        app:emptySubTextGravity="center"
+        app:emptyText="@string/empty_trans"
+
+        app:errorButtonBackgroundColor="@color/cursor1_color"
+        app:errorButtonText="\t Tap to Retry \t"
+        app:errorButtonTextColor="#ffffff"
+        app:errorButtonTextSize="12sp"
+        app:errorDrawable="@drawable/ict_chamelon_wifi_server_er"
+        app:errorSubText=""
+        app:errorText="@string/error2"
+        app:errorTextGravity="center"
+        app:errorSubTextGravity="center"
+
+
+        app:isLargeProgress="false"
+        app:progressDrawable="@drawable/custom_progressbar_drawable"
+        app:useEmptyButton="false"
+        app:useErrorButton="true"
+        app:dState="CONTENT"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv"
+            android:layout_height="match_parent"
+            app:layout_constrainedHeight="true"
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:clipToPadding="false"
+            android:nestedScrollingEnabled="true"
+            android:overScrollMode="never"
+            android:scrollbarStyle="outsideOverlay"
+            android:visibility="visible"
+            tools:itemCount="5"
+            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/rcv_item_qs"
+            tools:orientation="horizontal"
+            tools:spanCount="3"
+
+            />
+    </xyz.sangcomz.chameleon.Chameleon>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_index_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.001" />
+    <xyz.sangcomz.chameleon.Chameleon
+        android:id="@+id/qs_no_chameleon"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:paddingLeft="@dimen/_1sdp"
+        android:paddingRight="@dimen/_1sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        app:layout_constraintBottom_toTopOf="@+id/submit_btn"
+        app:layout_constraintTop_toBottomOf="@+id/top_line_view"
+
+        app:layout_constraintLeft_toRightOf="@+id/g_index_left"
+
+
+        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="@dimen/_1sdp"
+        android:layout_gravity="center"
+        android:visibility="visible"
+
+
+
+        app:emptyButtonText="\t Tap to Refresh \t"
+        app:emptyButtonTextColor="@color/white"
+        app:emptyButtonBackgroundColor="@color/cursor1_color"
+        app:emptyButtonTextSize="12sp"
+        app:emptyDrawable="@drawable/ict_chamelon_error2"
+        app:emptySubText=""
+        app:emptyTextGravity="center"
+        app:emptySubTextGravity="center"
+        app:emptyText="@string/empty_trans"
+
+        app:errorButtonBackgroundColor="@color/cursor1_color"
+        app:errorButtonText="\t Tap to Retry \t"
+        app:errorButtonTextColor="#ffffff"
+        app:errorButtonTextSize="12sp"
+        app:errorDrawable="@drawable/ict_chamelon_wifi_server_er"
+        app:errorSubText=""
+        app:errorText="@string/error2"
+        app:errorTextGravity="center"
+        app:errorSubTextGravity="center"
+
+
+        app:isLargeProgress="false"
+        app:progressDrawable="@drawable/custom_progressbar_drawable"
+        app:useEmptyButton="false"
+        app:useErrorButton="true"
+        app:dState="CONTENT"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/qs_no_rcv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:nestedScrollingEnabled="true"
+            android:overScrollMode="never"
+            android:paddingTop="@dimen/_1sdp"
+            android:paddingBottom="@dimen/_1sdp"
+            android:scrollbarStyle="outsideOverlay"
+            android:visibility="visible"
+            tools:itemCount="12"
+            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/rcv_item_qs_no"
+
+            tools:orientation="vertical"
+            tools:spanCount="8" />
+    </xyz.sangcomz.chameleon.Chameleon>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submit_btn"
+        style="@style/Widget.MaterialComponents.Button"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline_xright"
+app:layout_constraintLeft_toRightOf="@+id/guideline_xleft"
+
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="@dimen/_40sdp"
+        android:paddingRight="@dimen/_40sdp"
+
+        android:paddingBottom="@dimen/_8sdp"
+        android:paddingTop="@dimen/_8sdp"
+
+        android:layout_width="0dp"
+        android:backgroundTint="?attr/tint_2"
+        android:textColor="?attr/btn_text_color_1"
+        android:textSize="@dimen/_14ssp"
+        android:layout_height="wrap_content"
+        android:text="Finish Exam "/>
+
+  <!--  <com.jpndev.utilitylibrary.CustomViewPager
+        android:id="@+id/mViewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toRightOf="@+id/guideline_xleft"
+        app:layout_constraintRight_toLeftOf="@+id/guideline_xright"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

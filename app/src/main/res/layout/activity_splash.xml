@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/top_clay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icn_niravu_bg6_2"
+   >
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline_h_left"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.12"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline_top"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/g_nirvu_top"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05"/>
+    <com.jpndev.utilitylibrary.DeviceFitImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/json_req_dimv"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_top"
+        app:layout_constraintLeft_toRightOf="@+id/guideline_h_left"
+        android:layout_marginTop="0dp"
+        android:visibility="gone"
+        android:layout_marginRight="4dp"
+
+
+        android:src="@drawable/ic_content_copy_black_24dp"
+        app:height_percentage="5"
+        app:width_percentage="6"
+        android:scaleType="fitCenter"
+        android:layout_height="wrap_content" />
+
+
+    <com.jpndev.utilitylibrary.DeviceFitImageView
+        android:layout_width="match_parent"
+        android:id="@+id/niravu_dimv"
+        app:layout_constraintTop_toBottomOf="@+id/g_nirvu_top"
+
+        android:layout_marginTop="0dp"
+        android:visibility="visible"
+        android:layout_marginRight="4dp"
+
+app:parameter="fixed_ratio"
+        android:src="@drawable/ict_niravu_text"
+        app:height_percentage="35"
+        app:width_percentage="60"
+        android:scaleType="fitCenter"
+        android:layout_height="wrap_content" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/g_developer_btm"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85"/>
+    <com.jpndev.utilitylibrary.DeviceFitImageView
+        android:layout_width="0dp"
+        android:id="@+id/developer_dimv"
+        app:layout_constraintBottom_toTopOf="@+id/g_developer_btm"
+        app:layout_constraintLeft_toRightOf="@+id/g_tick_left"
+        app:layout_constraintRight_toLeftOf="@+id/g_tick_right"
+        android:layout_marginTop="0dp"
+        android:visibility="visible"
+        android:layout_marginRight="4dp"
+
+        app:parameter="fixed_ratio"
+        android:src="@drawable/icn_jpn_text_1"
+        app:height_percentage="15"
+        app:width_percentage="60"
+        android:scaleType="fitCenter"
+        android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/g_tick_left"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.20"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/g_tick_right"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.80"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/g_tick_top"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0001"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/g_tick_btm"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.34"/>
+    <RelativeLayout
+        app:layout_constraintTop_toBottomOf="@+id/g_tick_top"
+        app:layout_constraintBottom_toTopOf="@+id/g_tick_btm"
+        app:layout_constraintLeft_toRightOf="@+id/g_tick_left"
+        app:layout_constraintRight_toLeftOf="@+id/g_tick_right"
+        android:id="@+id/design_llay"
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/login_shape_bk"
+        android:orientation="vertical"
+        android:layout_weight="3">
+        <!-- android:background="@drawable/curves"-->
+        <ImageView
+          android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_login_bk"
+
+            android:contentDescription="login background" />
+        <!--   <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+
+               android:layout_centerInParent="true"
+               android:background="@drawable/ic_star_half_white_24dp"
+               />-->
+        <!--            app:layout_constraintDimensionRatio="H,4:5"-->
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

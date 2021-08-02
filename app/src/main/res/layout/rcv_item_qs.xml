@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    style="@style/BASE_CARD_1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+   android:padding="@dimen/_4sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_2sdp"
+
+    >
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--    style="@style/Base_Home"-->
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/g_top"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.002"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_xleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_xright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.99" />
+    <!--        app:layout_constraintTop_toTopOf="@+id/option_txv"
+        app:layout_constraintBottom_toBottomOf="@+id/option_txv"-->
+
+
+
+
+
+    <TextView
+        android:id="@+id/question_txv"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/g_xleft"
+        app:layout_constraintRight_toLeftOf="@+id/g_xright"
+        app:layout_constraintTop_toBottomOf="@+id/g_top"
+android:fontFamily="@font/sofia_pro_regular"
+        style="@style/Base_TXV_1"
+        android:textSize="@dimen/_14ssp"
+
+        />
+
+    <xyz.sangcomz.chameleon.Chameleon
+        android:id="@+id/chameleon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_3sdp"
+        android:paddingRight="@dimen/_3sdp"
+        app:layout_constraintTop_toBottomOf="@+id/question_txv"
+android:paddingBottom="@dimen/_20sdp"
+        app:layout_constraintLeft_toRightOf="@+id/g_xleft"
+        app:layout_constraintRight_toLeftOf="@+id/g_xright"
+
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginLeft="@dimen/_1sdp"
+        android:layout_marginRight="@dimen/_1sdp"
+
+        android:layout_gravity="center"
+        android:visibility="visible"
+
+
+
+        app:emptyButtonText="\t Tap to Refresh \t"
+        app:emptyButtonTextColor="@color/white"
+        app:emptyButtonBackgroundColor="@color/cursor1_color"
+        app:emptyButtonTextSize="12sp"
+        app:emptyDrawable="@drawable/ict_chamelon_error2"
+        app:emptySubText=""
+        app:emptyTextGravity="center"
+        app:emptySubTextGravity="center"
+        app:emptyText="@string/empty_trans"
+
+        app:errorButtonBackgroundColor="@color/cursor1_color"
+        app:errorButtonText="\t Tap to Retry \t"
+        app:errorButtonTextColor="#ffffff"
+        app:errorButtonTextSize="12sp"
+        app:errorDrawable="@drawable/ict_chamelon_wifi_server_er"
+        app:errorSubText=""
+        app:errorText="@string/error2"
+        app:errorTextGravity="center"
+        app:errorSubTextGravity="center"
+
+
+        app:isLargeProgress="false"
+        app:progressDrawable="@drawable/custom_progressbar_drawable"
+        app:useEmptyButton="false"
+        app:useErrorButton="true"
+        app:dState="CONTENT"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_1sdp"
+            android:paddingBottom="@dimen/_1sdp"
+            app:layout_constrainedHeight="true"
+            android:clipToPadding="false"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never"
+            android:scrollbarStyle="outsideOverlay"
+            android:visibility="visible"
+            tools:itemCount="5"
+            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/rcv_item_quiz_option"
+            tools:orientation="vertical"
+            tools:spanCount="3"
+
+            />
+    </xyz.sangcomz.chameleon.Chameleon>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

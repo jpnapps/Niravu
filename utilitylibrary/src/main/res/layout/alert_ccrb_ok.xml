@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:id="@+id/top_llay"
+
+    android:background="@color/transparent_black_7"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    >
+-->
+
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:id="@+id/top_llay"
+
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    >
+    <androidx.cardview.widget.CardView android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+
+        app:cardCornerRadius="6dp"
+        app:contentPadding="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="4dp"
+        app:cardMaxElevation="6dp"
+        android:layout_height="wrap_content">
+
+
+
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:id="@+id/inner_top_llay"
+        android:padding="5dp"
+        android:layout_centerInParent="true"
+        android:background="@color/app_white_bg"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alert_action_bar_size"
+            android:id="@+id/action_bar_rlay"
+
+
+            android:visibility="visible">
+
+            <include
+                android:id="@+id/include"
+                layout="@layout/actionbar_white_three_text_image_close"></include>
+        </RelativeLayout>
+
+
+        <com.jpndev.utilitylibrary.DeviceFitImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dimv"
+            android:src="@drawable/id_kyc_logo"
+            app:width_percentage="30"
+            android:visibility="gone"
+            app:height_percentage="30"
+            android:layout_margin="10dp"
+            android:scaleType="fitCenter"
+            app:parameter="fixed_ratio"/>
+        <com.jpndev.utilitylibrary.CustomFontTextView
+            android:id="@+id/desc_cftxv"
+            android:paddingTop="0dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/sp20"
+            app:fontString="@string/ubuntu_regular"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content" />
+        <!--    <ScrollView
+                android:layout_width="match_parent"
+
+                app:layout_constraintTop_toBottomOf="@+id/action_bar_rlay"
+                android:layout_height="match_parent">-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/okey_rlay"
+
+           android:layout_marginLeft="30dp"
+android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:id="@+id/inapp_cview"
+
+                app:cardCornerRadius="10dp"
+                app:contentPadding="4dp"
+                app:cardBackgroundColor="@color/ccrbGreen"
+
+                app:cardElevation="5dp"
+                app:cardMaxElevation="5dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                >
+
+            <com.jpndev.utilitylibrary.CustomFontTextView
+                android:id="@+id/ok_cftxv"
+                android:padding="8dp"
+                android:textColor="@color/app_white_txt"
+                android:background="@color/ccrbGreen"
+                android:textSize="@dimen/sp20"
+                app:fontString="@string/ubuntu_regular"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:text="ok"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content" />
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+        <!-- </ScrollView>-->
+    </LinearLayout>
+   </androidx.cardview.widget.CardView>
+</RelativeLayout>

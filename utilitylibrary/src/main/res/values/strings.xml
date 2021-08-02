@@ -1,0 +1,541 @@
+<resources>
+
+    <string name="content">Content</string>
+    <string name="loading">Loading</string>
+
+    <string name="long_empty">Empty Long Long Long Long Long Long Long</string>
+    <string name="long_sub_empty">Where is chameleon? Where is chameleon? Where is chameleon? Where is chameleon? Where is chameleon?</string>
+<!--    <string name="error">We are sorry , Something went wrong</string>
+    <string name="sub_error">Please check your network connection</string>-->
+
+    <string name="empty">Not posted anything yet!!</string>
+   <!-- <string name="sub_empty">Not listed anything yet</string>-->
+    <string name="sub_empty">No Records Found</string>
+
+
+    <string name="error2">Oops!</string>
+
+    <string name="sub_error2">Something went wrong</string>
+    <string name="error">Oops!</string>
+    <string name="sub_error">Something went wrong</string>
+    <string name="instore_try_online">Please try online</string>
+
+    <string name="credecard_sub_empty">Not Available</string>
+
+    <string name="empty_trans">  Not Found !!!</string>
+    <string name="sub_empty_trans">You do not have any transactions yet.</string>
+    <!-- <string name="sub_empty">Not listed anything yet</string>-->
+    <string name="sub_empty_crede_menu">You do not have any actions </string>
+
+
+    <string name="btc_address_warn">Only Send Bitcoin(BTC) to this address. </string>
+    <string name="display">Display State</string>
+
+    <string name="remove_card">Remove Card</string>
+    <string name="verify_card">Verify Card </string>
+
+    <string name="instore_empty">Not listed anything yet!!</string>
+
+    <string name="transcations_empty">No Transactions  yet</string>
+    <string name="cards_empty">Not added any Cards </string>
+
+    <string name="choose_funding_source">Choose Funding Source</string>
+    <string name="available_balance">Available Balance</string>
+    <string name="you_pay">You Pay</string>
+
+
+    <string name="kyc_alert_verify">Verify your Account Now</string>
+    <string name="kyc_alert_verify_desc">Don\'t wait. Verify your account today!
+Trouble getting verified? Contact
+Customer Support</string>
+
+    <!-- <string name="app_name">Utility library</string>-->
+    <!--<string name="facebook_app_id">448702782150953</string>-->
+    <string name="gcm_project_number">774565074522</string>
+    <string name="avenir_roman">sofia_pro_regular.ttf</string>
+    <string name="avenir_black">sofia_pro_regular.ttf</string>
+    <string name="avenir_book">sofia_pro_regular.ttf</string>
+    <string name="avenir_medium">sofia_pro_regular.ttf</string>
+<!--    <string name="ubuntu_bold">sofia_pro_regular.ttf</string>-->
+
+<!--    <string name="ubuntu_bold">Ubuntu-Bold.ttf</string>
+    <string name="ubuntu_light">Ubuntu-Light.ttf</string>
+    <string name="ubuntu_regular">Ubuntu-Regular.ttf</string>-->
+
+
+    <string name="ubuntu_bold">sofia_pro_regular.ttf</string>
+    <string name="ubuntu_light">sofia_pro_regular.ttf</string>
+    <string name="ubuntu_regular">sofia_pro_regular.ttf</string>
+    <string name="poppins_italic">sofia_pro_regular.ttf</string>
+
+    <string name="sell_all">Sell All</string>
+    <string name="sell_half">Sell 1/2</string>
+    <string name="sell_3_by_4">Sell 3/4</string>
+    <string name="permissions_needed">Camera and Microphone permissions needed. Please allow in App Settings for additional functionality.</string>
+    <string name="error_retrieving_access_token">Error retrieving token</string>
+
+
+    <string name="youAreNotUpdatedTitle">Update Available</string>
+    <string name="youAreNotUpdatedMessage">A new version of Niravu is available. Please update to version\s</string>
+    <string name="youAreNotUpdatedMessage1">\s now</string>
+    <string name="update">Update</string>
+
+    <!--//Facebook-->
+    <string name="facebook_app_id">515751829225149</string>
+    <string name="fb_login_protocol_scheme">fb515751829225149</string>
+
+    <!-- Strings related to login -->
+    <string name="signup">Sign Up</string>
+    <string name="login">Log in</string>
+    <string name="login_fb">Login via Facebook</string>
+    <string name="log_out">LogOut</string>
+    <string name="prompt_name">Name</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_amont">Enter Amount</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_phone">Phone number</string>
+    <string name="signup_fb">Sign up via Facebook</string>
+    <string name="e_phonenumber">Enter your phone number </string>
+    <string name="e_con_code">Enter confirmation code</string>
+    <string name="phone">Phone number</string>
+    <string name="comments">Add a comment.</string>
+    <string name="otp_hint">Please enter the verification code that was sent to </string>
+    <string name="create_account">Create account</string>
+    <string name="verify_phone">Verify phone number</string>
+    <string name="submit">Submit</string>
+    <string name="send_message">Send messsage</string>
+    <string name="save">Save</string>
+    <string name="read_understand">I have read, understand, and agree to be bound by the</string>
+    <string name="agree_terms_alert">You need to agree to Terms of use before signing up</string>
+    <string name="term_of_use"> Terms of Use</string>
+    <string name="send_confirmcode">Send Confirmation code </string>
+    <string name="didnt_get_code">Did not receive a code? Resend </string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="how_you_rate">How do you rate your Pacifyr / Therapist</string>
+
+    <string name="find_helping_pacifyr">Find a pacifyr who can help you</string>
+    <string name="specify_emotion">Specify your emotion</string>
+    <string name="talk_to_pacifyr">Talk to your pacifyr using chat,audio or video</string>
+    <string name="skip">Skip</string>
+
+
+   <!-- <string name="type_text">Type text message</string>-->
+
+    //Prfile
+    <string name="per_hour"> per hour</string>
+
+    //HomeScreen Related
+    <string name="dashboard">Dashboard</string>
+    <string name="profile">Profile</string>
+    <string name="session_expired">Session expired</string>
+    <string name="this_week">THIS WEEK</string>
+    <string name="pref_pacifyrs">PREFFERED PACIFYRS</string>
+    <string name="my_last_session">MY LAST SESSION</string>
+    <string name="how_you_feel">HOW ARE YOU FEELING?</string>
+    <string name="how_you_feel_now">How are you feeling now?</string>
+    <string name="sessions">SESSIONS</string>
+    <string name="hours">HOURS</string>
+    <string name="available_min">AVAILABLE MIN</string>
+    <string name="earnings">EARNINGS</string>
+    <string name="starts">STARTS</string>
+    <string name="customers">CUSTOMERS</string>
+    <string name="today">TODAY</string>
+
+    <string name="press_back_again_to_exit">Press back again to exit...!</string>
+    <string name="logout">LOGOUT</string>
+    <string name="online_l">Online</string>
+
+    <string name="online">ONLINE</string>
+    <string name="offline">OFFLINE</string>
+
+    <string name="actions">Actions</string>
+
+    <string name="rp_history">Receipt History</string>
+    <string name="qr_code_hint">Use this QR code or address to deposit  </string>
+    <!--Trade-->
+    <string name="confirm_swap">Confirm Swap</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="buy">Buy</string>
+    <string name="sell">Sell</string>
+    <string name="send">Send</string>
+    <string name="swap_now">Swap Now</string>
+    <string name="swap">Swap</string>
+    <string name="proceed">Proceed</string>
+    <string name="linked_accouts">Linked Accounts</string>
+    <string name="exchange_rate">Exchange Rate</string>
+    <string name="swap_accounts">Swap Accounts</string>
+
+
+    <string name="add_payout_method">Add a Payout Method</string>
+    <string name="proceed_to_withdraw">Proceed to Withdraw</string>
+
+    <string name="buy_now">Buy Now</string>
+    <string name="btc_price">BTC Price</string>
+    <string name="trade_tech">Trade on Techbank</string>
+    <string name="wdraw_tech">Withdraw from Techbank</string>
+    <string name="payment_method">Payment method</string>
+    <string name="techbank_fee">Techbank  Fee</string>
+    <string name="instantly">Instantly  </string>
+    <string name="total">Total</string>
+
+    <string name="contact_now">Contact Now</string>
+    <!--payment-->
+    <string name="checkout">Checkout</string>
+    <string name="manage_payment">Manage Payment</string>
+
+
+    <string name="phone_verification">Phone Verification </string>
+
+
+    <string name="credecard_wallet">CredEcard Wallet</string>
+    <string name="wire_transfer_deposit">Wire Transfer Deposit</string>
+
+    <string name="receipt_confirmation">Receipt Confirmation</string>
+
+    <string name="purchase_summary">Purchase Summary</string>
+    <string name="sell_summary">Sell Summary</string>
+    <string name="send_summary">Send Summary</string>
+    <!--quickblok-->
+    <!-- Errors strings. -->
+    <string name="error_max_opponents_count">You can select up to %d opponents</string>
+    <string name="sign_up_error">Error creating new user, please try again</string>
+    <string name="sign_in_error_with_error">Sign In error. Error</string>
+    <string name="sign_in_error_without_error">Sign In error</string>
+    <string name="logout_user_with_error">Logout user error. Error</string>
+
+    <string name="error_empty_login">Login can not be empty</string>
+    <string name="error_empty_chat_room_name">Chat room name can not be empty</string>
+
+    <string name="login_chat_login_error">Login Chat error. Please relogin. Error</string>
+    <string name="update_user_error">Update user error. Error</string>
+    <string name="loading_users_error">Loading users error. Error</string>
+
+    <string name="permission_unavailable">%s is not available now!</string>
+
+    <string name="field_name_user_name">User name</string>
+    <string name="field_name_chat_room_name">Chat room name</string>
+
+    <string name="error_name_must_not_contain_special_characters_from_app">%1$s must contain 3 &#8212; %2$s alphanumeric Latin characters without space, the first char must be a letter</string>
+
+    <!--menu-->
+    <string name="action_start_login">Done</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_screen_share">Screen share</string>
+    <string name="action_update_opponens_list">Update opponents list</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_start_video_call">Video call</string>
+    <string name="action_start_audio_call">Audio call</string>
+
+
+    <!--action bar-->
+    <string name="actionbar_title_settings">Settings</string>
+    <string name="title_login_activity">Enter to chat</string>
+    <string name="subtitle_text_logged_in_as">Logged in as %s</string>
+    <string name="title_one_user_selected">%s user selected</string>
+    <string name="tile_many_users_selected">%s users selected</string>
+
+
+    <string name="incoming_call">Incoming Call</string>
+    <string name="also_on_call">Also on call:</string>
+    <string name="edit_opponents_list">Edit opponents list</string>
+    <string name="incoming_audio_call">Incoming Audio Call</string>
+    <string name="incoming_video_call">Incoming Video Call</string>
+
+    <string name="user_list_on_call">User 1, User 2, User 3, User 4, User 5, User 6</string>
+
+
+    <string name="opponent_pending">Pending</string>
+    <string name="opponent_closed">Closed</string>
+    <string name="text_incoming_audio_call">Incoming Audio Call</string>
+    <string name="text_incoming_video_call">Incoming Video Call</string>
+    <string name="text_status_connect">Connect…</string>
+    <string name="text_status_checking">Checking…</string>
+    <string name="text_status_connected">Connected</string>
+    <string name="text_status_disconnected">Disconnected</string>
+
+    <string name="text_status_rejected">Rejected</string>
+    <string name="text_status_no_answer">No answer</string>
+    <string name="text_status_hang_up">Hung up</string>
+    <string name="text_status_closed">Closed</string>
+    <string name="text_status_time_out">Time Out</string>
+    <string name="text_status_failed">Failed</string>
+
+    <string name="hint_user_name">User name</string>
+    <string name="hint_chat_room_name">Chat room name</string>
+
+    <string name="text_select_user_to_call">Select users you want to call</string>
+
+    <string name="call_was_stopped_connection_lost">Call was stopped because connection was lost</string>
+    <string name="connection_lost">Connection lost</string>
+
+    <string name="text_push_notification_message">"%s is calling you"</string>
+
+
+    <!-- Settings strings. -->
+    <string name="title_video_category">Video</string>
+    <string name="title_call_settings_category">Call Settings</string>
+
+
+    <!--Call Settings-->
+
+
+
+
+    <string name="pref_value_enabled">Enabled</string>
+    <string name="pref_value_disabled">Disabled</string>
+
+    <string name="pref_room_server_url_key">room_server_url_preference</string>
+    <string name="pref_room_server_url_title">Room server URL.</string>
+    <string name="pref_room_server_url_dlg">Enter a room server URL.</string>
+    <string name="pref_room_server_url_default" translatable="false">https://apprtc.appspot.com</string>
+
+
+
+    <string name="btn_screen_capture">screenShot</string>
+    <string name="accepted">Accepted</string>
+    <string name="connection_was_lost">Connection was lost</string>
+
+    <string name="bfeature1">Unlimited instore cryptohashes</string>
+    <string name="bfeature2">Unlimited Instore receipt submission</string>
+    <string name="bfeature3">Unlimited crypto hashes on daily deals</string>
+    <string name="bfeature4">Unlimited crypto hashes on top up &amp;
+prepaid cards</string>
+    <string name="bfeature5">Unlimited free meals (save up to £36
+per use) and 50% off food bills at our
+offers partners restaurants</string>
+    <string name="bfeature6">10% Bonus crypto hashes on all online
+purchases </string>
+    <string name="goplus_head">Go plus and maximise your savings</string>
+
+
+    <string name="goplus_start">
+We know you love Beeone but you can take it to another level when you Go Plus! \n\n
+
+For just £9.99 a month you’ll join tens of thousands of Go Plus members who qualify for up to 50% off their bills at close to 10,000 restaurants throughout the UK and Ireland.
+
+\n\n Including all these amazing brands: </string>
+    <string name="goplus_desc2">
+You’ll also receive a whopping 10% more cryptohashes than other Beeone users do every time you collect cryptohashes online. </string>
+
+    <string name="goplus_desc3">
+Go Plus today and we will add £5 to your cryptohashes balance, letting you try it for the next
+        month totally risk free. </string>
+    <string name="sender_id">761750217637</string>
+
+
+    <string name="choose_category">Choose a Category </string>
+    <string name="include_some_detials">Include Some Detials</string>
+    <string name="review_your_detials">Review Your Detials</string>
+
+
+
+<!--    <string name="show_again">Don &#8212;t show this agaib</string-->>
+
+
+
+
+
+
+
+
+
+    <string name="goplus_terms"><big>By selecting a card, entering your CVV (3 digit security code)
+and clicking Go+ you agree to the following Terms and Conditions
+        of Go Plus membership.</big>
+
+\n\n<ul>
+           <big> <li>
+We will debit £9.99 today from your selected card and every 30 days
+            from today..</li></big>\n\n
+
+
+ <big> <li>Although there are no contracts and you can cancel Go plus at any
+time, in the unlikely event that you cancel Go Plus at some point in
+the future, you understand that no refunds are given for part months
+    already paid.</li></big>\n\n
+
+ <big> <li>Unless stated otherwise, always assume you must call restaurants
+and book a table in advance quoting our “Gourmet Society”offer in
+    order to claim 50% off.</li></big>\n\n
+
+ <big> <li>Restaurant offers in Go Plus are discounts at the point of sale and
+not cryptohashes.</li></big>\n\n
+
+ <big> <li>You must show your digital card from this website, IOS or Android
+app in order to access a restaurant offer. You can find the card on
+            this site by clicking on the merchant.</li></big></ul>
+
+    </string>
+    <string name="goplus_terms2_part1"><big>By selecting a card, entering your CVV (3 digit
+        security code)
+and clicking Go+ you agree to the following Terms and Conditions
+        of Go Plus membership.</big>
+
+\n\n<ul>
+           <big> <li>
+We will debit £9.99 today from your selected card and every 30 days
+            from today..</li></big>\n\n
+
+
+ <big> <li>Although there are no contracts and you can cancel Go plus at any
+time, in the unlikely event that you cancel Go Plus at some point in
+the future, you understand that no refunds are given for part months
+    already paid.</li></big>
+
+</ul>
+
+    </string>
+
+    <string name="goplus_terms2_part2"><ul>
+ <big> <li>Unless stated otherwise, always assume you must call restaurants
+and book a table in advance quoting our “Gourmet Society”offer in
+    order to claim 50% off.</li></big>\n\n
+
+ <big> <li>Restaurant offers in Go Plus are discounts at the point of sale and
+not cryptohashes.</li></big>\n\n
+
+ <big> <li>You must show your digital card from this website, IOS or Android
+app in order to access a restaurant offer. You can find the card on
+            this site by clicking on the merchant.</li></big></ul>
+
+    </string>
+
+    <string name="goplus_terms2">By selecting a card, entering your CVV (3 digit security code)
+and clicking Go+ you agree to the following Terms and Conditions
+        of Go Plus membership.
+
+\n\n
+            \u25CF
+ We will debit £9.99 today from your selected card and every 30 days
+from today..\n\n
+
+
+\u25CF Although there are no contracts and you can cancel Go plus at any
+time, in the unlikely event that you cancel Go Plus at some point in
+the future, you understand that no refunds are given for part months
+    already paid.\n\n
+
+\u25CF Unless stated otherwise, always assume you must call restaurants
+and book a table in advance quoting our “Gourmet Society”offer in
+    order to claim 50% off.\n\n
+
+\u25CF Restaurant offers in Go Plus are discounts at the point of sale and
+not cryptohashes.\n\n
+
+\u25CF You must show your digital card from this website, IOS or Android
+app in order to access a restaurant offer. You can find the card on this site by clicking on the
+        merchant.
+
+    </string>
+    <string name="upgrade_terms2">
+<ul>
+ <big> <li>By signing this Agreement, I confirm that:
+
+</li></big><!--\u25CF -->\n\n
+
+    <big> <li>I understand that I am entering into a legally binding contract formed by this Application, the Terms and Conditions, website privacy policies and the Distributor Agreement, Marketing Plan, Virtual Office Agreement and other associated documents, and that I have received a copy of, read, understood, and agree to each of these documents;
+All information provided by me to Bee One with this application is accurate and complete;
+If I am an individual, I am 18 years of age or older;
+Neither the Applicant nor the Applicant’s spouse/life partner has had an interest or benefit in an Bee One distributorship in the 12 months before the Effective Date.
+</li></big>\n\n
+<!--\u25CF--> <big> <li>I expressly authorise the Bee One to prepare and issue invoices to me and agree that invoices will be generated electronically and will be made available to me by electronic means only.
+
+</li></big>\n\n
+<!--\u25CF --><big> <li>Bee One UK LTD is the promoter of this trading scheme. This trading scheme offers online products and services and other products supplied by Bee One UK LTD as mentioned in the Beeone distributor terms and conditions mentioned above. Sales of these products and services are made via Independent Representatives who participate in the trading scheme as order-takers. The only financial obligation of a Beeone Independent Distributor during the 12-month term of this Agreement is the payment of the virtual office fee. There are no further financial obligations and, in particular, no obligation to purchase product or services from Bee One. The Bee One distributor participates in this trading scheme subject to the terms of this Agreement and at such level of the scheme as the individual may achieve.
+
+</li></big>\n\n
+<!--\u25CF--> <big> <li>You have the right to withdraw from this Agreement, without giving us a reason, for 14 days after it is concluded. This is called the “Withdrawal Period”. To exercise your right of withdrawal, you must inform us of your decision in writing before the Withdrawal Period expires by contacting Bee-One UK LTD. If you withdraw, Bee One will reimburse any payment received from You within 14 days from the date on which You inform us of your decision. BeeOne will reimburse You using the same means of payment that You used to pay us, unless you and we agree otherwise. See the Terms and Conditions for more information. Cancellation must be submitted in writing to Bee-One UK LTD, 1A, Floor 33, 25 Canada Square, Citi Group Centre, Canary Wharf, London, England, E14 5LB or support@beeone.co.uk
+
+</li></big>\n\n
+<!--\u25CF --><big> <li>When considering or comparing business opportunities, You should be aware that it is illegal for a promoter or participant in a trading scheme to persuade anyone to make a payment by promising benefits from getting others to join a scheme. Do not be misled by claims that high earnings are easily achieved.
+
+    </li></big>\n\n
+<!--\u25CF --><big> <li>Yes, I wish to become a Beeone Independent Distributor. I understand that
+        clicking the Accept and Submit button acts as my signature.
+     </li></big>
+</ul>
+    </string>
+
+
+
+
+
+
+
+
+
+<!--  Please ensure that the following details are
+    present in the receipt before uploading.-->
+    <string name="receipt_info_upload">
+
+<ul>
+<!--\u25CF -->
+
+    <big><li>Purchase Date
+</li></big>\n\n
+    <!--\u25CF--> <big> <li>Purchase Amount
+
+</li></big>\n\n
+    <!--\u25CF --><big> <li>Shop Name
+
+</li></big>\n\n
+    <!--\u25CF--> <big> <li>Currency
+
+
+    </li></big>\n\n
+    <!--\u25CF--> <big> <li>Card Number
+
+</li></big>
+</ul>
+    </string>
+      <!--  <string name="small_text"> </string>
+    <string name="long_text"> </string>
+    <string name="two_text"> </string>
+    <string name="mediuml_text"> </string>
+    <string name="medium2_text"> </string>
+    <string name="digit_text"> </string>-->
+    <string name="short_captian">C </string>
+    <string name="short_vccaptian">VC </string>
+    <string name="character_text">A </string>
+    <string name="timer_text">00.00 </string>
+    <string name="digit_text">0.0 </string>
+    <string name="two_text">Lo </string>
+    <string name="small_text">Lorem Ipsum </string>
+    <string name="medium2_text">Lorem Ipsum The standard chunk of Lorem Ipsum used since the
+        1500s is reproduced below for those interested.
+ </string>
+    <string name="mediuml_text">Lorem Ipsum The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+accompanied by English versions from the 1914 translation by H. Rackham.
+ </string>
+    <string name="long_text">Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+    Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+    >Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+    Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+</string>
+
+
+
+</resources>

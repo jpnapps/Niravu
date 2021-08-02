@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="0dp"
+    android:id="@+id/top_rlay"
+style="@style/Base_Detail.MatchParent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+
+    >
+    <!--android:layout_width="wrap_content"
+    android:layout_height="wrap_content"-->
+    <!--	<com.jpndev.utilitylibrary.DeviceFitImageView
+            android:id="@+id/logo_dimv"
+            android:layout_gravity="center"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    app:parameter="fixed_ratio"
+            android:scaleType="centerCrop"
+    app:width_percentage="95"
+            app:height_percentage="35"
+
+            android:src="@drawable/placeholder_image" />-->
+    <!--<com.jpndev.utilitylibrary.DeviceFitImageView
+        android:id="@+id/logo_dimv"
+        android:layout_gravity="center"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:scaleType="fitXY"
+        android:src="@drawable/placeholder_image" />-->
+
+    <ImageView
+    android:id="@+id/logo_dimv"
+    android:layout_gravity="center"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:visibility="gone"
+    android:scaleType="fitXY"
+    android:src="@drawable/placeholder_image" />
+
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/text1_txv"
+        android:layout_gravity="center"
+style="@style/txv_sub_template_1"
+        android:textSize="@dimen/_18ssp"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+ />
+    <!--		app:layout_constraintLeft_toRightOf="@+id/card_guideline_x_left"
+        app:layout_constraintRight_toLeftOf="@+id/card_guideline_x_right"
+        app:layout_constraintTop_toTopOf="@+id/logo_guideline_v_01"
+        app:layout_constraintBottom_toBottomOf="@+id/logo_guideline_v_78"-->
+</RelativeLayout>

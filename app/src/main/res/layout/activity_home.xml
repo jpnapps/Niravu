@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/top_clay"
+    app:layoutDescription="@xml/ms_home_1"
+    app:motionDebug="NO_DEBUG"
+     style="@style/Base_Home.MatchParent"
+>
+
+    <!--   app:layoutDescription="@xml/ms_home_1"
+    app:motionDebug="NO_DEBUG"-->
+
+
+    <androidx.constraintlayout.widget.Guideline
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/guideline_h_left"
+    android:orientation="vertical"
+    app:layout_constraintGuide_percent="0.02"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline_top"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02"/>
+    <com.jpndev.utilitylibrary.DeviceFitImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/json_req_dimv"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_top"
+        app:layout_constraintLeft_toRightOf="@+id/guideline_h_left"
+        android:layout_marginTop="0dp"
+        android:visibility="gone"
+        android:layout_marginRight="4dp"
+
+
+        android:src="@drawable/ic_content_copy_black_24dp"
+        app:height_percentage="5"
+        app:width_percentage="6"
+        android:scaleType="fitCenter"
+        android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_card_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.98" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_card_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_card_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_card_btm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.99" />
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline_mode_top"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.01"/>
+    <!-- app:layout_constraintLeft_toRightOf="@+id/g_card_left"
+        app:layout_constraintRight_toLeftOf="@+id/g_card_right"-->
+
+
+    <RelativeLayout
+        android:id="@+id/banner_slideview"
+        android:layout_marginTop="0dp"
+        app:layout_constraintLeft_toRightOf="@+id/g_card_left"
+        app:layout_constraintRight_toLeftOf="@+id/g_card_right"
+        app:layout_constraintTop_toBottomOf="@+id/parent"
+        app:layout_constraintDimensionRatio="H,16:4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <com.smarteist.autoimageslider.SliderView
+            android:id="@+id/banner_slideview2"
+
+            app:cardCornerRadius="@dimen/_4sdp"
+            app:cardBackgroundColor="@color/black"
+            android:layout_marginTop="0dp"
+android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            app:sliderAnimationDuration="600"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderAutoCycleEnabled="true"
+
+            app:sliderIndicatorAnimationDuration="600"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorMargin="10dp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="3dp"
+            app:sliderIndicatorRadius="2dp"
+            app:sliderIndicatorSelectedColor="?attr/bg_border_1"
+            app:sliderIndicatorUnselectedColor="?attr/bg_border_2"
+            app:sliderScrollTimeInSec="1"
+            app:sliderStartAutoCycle="true" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/small_menus_lay"
+        app:layout_constraintTop_toBottomOf="@+id/banner_slideview"
+        app:layout_constraintRight_toLeftOf="@+id/g_card_right"
+        app:layout_constraintLeft_toRightOf="@+id/g_card_left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+           android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.jpndev.utilitylibrary.DeviceFitImageView
+                android:id="@+id/app_info_dimv"
+                style="@style/DIMV_Template1"
+                android:tint="?attr/tint_2"
+                app:height_percentage="4"
+                app:width_percentage="10"
+                android:scaleType="fitCenter"
+                app:parameter="fixed_ratio"
+                android:layout_marginRight="@dimen/_20sdp"
+
+                android:src="@drawable/icn_info_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.jpndev.utilitylibrary.DeviceFitImageView
+                android:id="@+id/terms_dimv"
+                style="@style/DIMV_Template1"
+                android:tint="?attr/tint_2"
+                app:height_percentage="4"
+                app:width_percentage="10"
+                android:scaleType="fitCenter"
+                app:parameter="fixed_ratio"
+                android:layout_marginRight="@dimen/_20sdp"
+
+                android:src="@drawable/icn_terms_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <com.jpndev.utilitylibrary.DeviceFitImageView
+                android:id="@+id/about_us_dimv"
+                style="@style/DIMV_Template1"
+                android:visibility="gone"
+                android:tint="?attr/tint_2"
+                app:height_percentage="4"
+                app:width_percentage="10"
+                android:scaleType="fitCenter"
+                app:parameter="fixed_ratio"
+                android:layout_marginRight="@dimen/_20sdp"
+
+                android:src="@drawable/icn_info_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.jpndev.utilitylibrary.DeviceFitImageView
+                android:id="@+id/logout_dimv"
+                style="@style/DIMV_Template1"
+                android:visibility="visible"
+                android:tint="?attr/tint_2"
+                app:height_percentage="4"
+                app:width_percentage="10"
+                android:scaleType="fitCenter"
+                app:parameter="fixed_ratio"
+                android:layout_marginRight="@dimen/_20sdp"
+
+                android:src="@drawable/logout_inactive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <com.jpndev.utilitylibrary.DeviceFitImageView
+                android:id="@+id/modes_dimv"
+                style="@style/DIMV_Template1"
+                android:tint="?attr/tint_2"
+                app:height_percentage="4"
+                app:width_percentage="10"
+                android:scaleType="fitCenter"
+                app:parameter="fixed_ratio"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/icn_modes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_mode_btm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+
+
+
+
+
+
+
+
+
+
+
+<androidx.constraintlayout.widget.Barrier
+    android:id="@+id/mode_barrier_btm"
+    app:constraint_referenced_ids="g_mode_btm,small_menus_lay"
+    app:barrierDirection="bottom"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+<!--app:layout_constraintBottom_toBottomOf="@+id/g_card_btm"-->
+
+
+    <RelativeLayout
+        android:id="@+id/list_rlay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/g_card_left"
+        app:layout_constraintRight_toLeftOf="@+id/g_card_right"
+        app:layout_constraintTop_toBottomOf="@+id/mode_barrier_btm"
+    >
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_lay"
+
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+  >
+
+
+
+
+
+    <xyz.sangcomz.chameleon.Chameleon
+        android:id="@+id/chameleon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/_2sdp"
+        android:paddingRight="@dimen/_2sdp"
+
+
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_1sdp"
+        android:layout_marginRight="@dimen/_1sdp"
+        android:layout_gravity="center"
+        android:visibility="visible"
+
+
+
+        app:emptyButtonText="\t Tap to Refresh \t"
+        app:emptyButtonTextColor="@color/white"
+        app:emptyButtonBackgroundColor="@color/cursor1_color"
+        app:emptyButtonTextSize="12sp"
+        app:emptyDrawable="@drawable/ict_chamelon_error2"
+        app:emptySubText=""
+        app:emptyTextGravity="center"
+        app:emptySubTextGravity="center"
+        app:emptyText="@string/empty_trans"
+
+        app:errorButtonBackgroundColor="@color/cursor1_color"
+        app:errorButtonText="\t Tap to Retry \t"
+        app:errorButtonTextColor="#ffffff"
+        app:errorButtonTextSize="12sp"
+        app:errorDrawable="@drawable/ict_chamelon_wifi_server_er"
+        app:errorSubText=""
+        app:errorText="@string/error2"
+        app:errorTextGravity="center"
+        app:errorSubTextGravity="center"
+
+
+        app:isLargeProgress="false"
+        app:progressDrawable="@drawable/custom_progressbar_drawable"
+        app:useEmptyButton="false"
+        app:useErrorButton="true"
+        app:dState="LOADING"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:clipToPadding="false"
+            android:nestedScrollingEnabled="true"
+            android:overScrollMode="never"
+            android:scrollbarStyle="outsideOverlay"
+            android:visibility="visible"
+            tools:itemCount="5"
+            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/rcv_item_home_data_1"
+            tools:orientation="vertical"
+            tools:spanCount="3"
+
+            />
+    </xyz.sangcomz.chameleon.Chameleon>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.labo.kaji:relativepopupwindow:0.3.1@aar">
+    <ANNOTATIONS>
+      <root url="jar://D:/jp_android_sys/Gradleconfig/caches/transforms-2/files-2.1/84bb7f279cdad820ad38fee726a5a44a/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://D:/jp_android_sys/Gradleconfig/caches/transforms-2/files-2.1/84bb7f279cdad820ad38fee726a5a44a/jars/classes.jar!/" />
+      <root url="file://D:/jp_android_sys/Gradleconfig/caches/transforms-2/files-2.1/84bb7f279cdad820ad38fee726a5a44a/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://D:/jp_android_sys/Gradleconfig/caches/modules-2/files-2.1/com.labo.kaji/relativepopupwindow/0.3.1/dc431dc85864efa9adda2ced5d85f58e553931a5/relativepopupwindow-0.3.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

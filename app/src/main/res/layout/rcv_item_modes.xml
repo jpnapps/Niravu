@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+     style="@style/Base_RCV_TOP.MatchParent"
+    android:layout_height="wrap_content"
+
+
+    >
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_radio_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_line_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/g_line_left"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.01"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/g_line_right"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.99"/>
+
+
+    <View
+        android:id="@+id/left_line_v"
+        android:visibility="visible"
+        android:layout_height="0dp"
+        android:layout_width="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/g_line_top"
+        app:layout_constraintLeft_toRightOf="@+id/g_line_left"
+        app:layout_constraintBottom_toBottomOf="@+id/btm_line_v"
+        android:layout_marginTop="0dp"
+
+        style="@style/Base_Border_1"
+  />
+    <!--    style="@style/Base_Border_1"-->
+    <View
+        android:id="@+id/right_line_v"
+        app:layout_constraintTop_toBottomOf="@+id/g_line_top"
+        app:layout_constraintBottom_toBottomOf="@+id/btm_line_v"
+        app:layout_constraintRight_toLeftOf="@+id/g_line_right"
+        android:layout_marginTop="0dp"
+        android:layout_width="1dp"
+        style="@style/Base_Border_1"
+        android:visibility="visible"
+        android:layout_height="0dp"/>
+
+
+
+    <View
+        android:id="@+id/h_top_line_v"
+        app:layout_constraintTop_toBottomOf="@+id/g_line_top"
+        app:layout_constraintLeft_toRightOf="@+id/left_line_v"
+        app:layout_constraintRight_toLeftOf="@+id/right_line_v"
+        android:layout_width="0dp"
+        android:layout_marginTop="1dp"
+        style="@style/Base_Border_1"
+        android:visibility="visible"
+        android:layout_height="1dp"/>
+
+
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/btm_line_v"-->
+    <View
+        android:id="@+id/bg_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/Base_View_1"
+        app:layout_constraintBottom_toTopOf="@+id/btm_line_v"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/left_line_v"
+        app:layout_constraintRight_toLeftOf="@+id/right_line_v"
+        app:layout_constraintTop_toBottomOf="@+id/h_top_line_v"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RelativeLayout
+        android:id="@+id/select_rlay"
+        android:layout_marginTop="@dimen/_14sdp"
+
+        app:layout_constraintTop_toBottomOf="@+id/h_top_line_v"
+
+        app:layout_constraintLeft_toRightOf="@+id/left_line_v"
+        app:layout_constraintRight_toLeftOf="@+id/g_radio_left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <com.jpndev.utilitylibrary.DeviceFitImageView
+            android:id="@+id/select_dimv"
+            style="@style/DIMV_Template1"
+
+            android:layout_centerInParent="true"
+            android:src="@drawable/icn_radio_button_checked"
+android:tint="?attr/text_color_1"
+            app:width_percentage="10"
+            app:height_percentage="4"
+            android:scaleType="fitCenter"
+            app:parameter="fixed_ratio"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+
+            />
+    </RelativeLayout>
+
+
+
+    <TextView
+      app:layout_constraintTop_toTopOf="@+id/select_rlay"
+        app:layout_constraintBottom_toBottomOf="@+id/select_rlay"
+      android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintLeft_toRightOf="@+id/g_radio_left"
+        android:id="@+id/text1_txv"
+        style="@style/Base_TXV_1"
+        android:text="Light"
+        android:textSize="@dimen/_18ssp"
+
+
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="match_parent"
+        app:barrierDirection="bottom"
+        android:id="@+id/remove_barrier"
+        app:constraint_referenced_ids="text1_txv,select_rlay"
+        android:layout_height="wrap_content" />
+
+
+
+
+    <View
+        android:id="@+id/btm_line_v"
+        app:layout_constraintTop_toBottomOf="@+id/remove_barrier"
+        app:layout_constraintLeft_toRightOf="@+id/left_line_v"
+        app:layout_constraintRight_toLeftOf="@+id/right_line_v"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/_14sdp"
+
+        style="@style/Base_Border_1"
+        android:visibility="visible"
+        android:layout_height="1dp"/>
+
+
+    <View
+        android:id="@+id/btm_white_v"
+        android:layout_width="match_parent"
+
+        android:layout_height="@dimen/_10sdp"
+        style="@style/Base_View_1"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/btm_line_v"
+        tools:layout_editor_absoluteX="0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.facebook.android:facebook-common:5.8.0@aar">
+    <CLASSES>
+      <root url="jar://D:/jp_android_sys/Gradleconfig/caches/transforms-2/files-2.1/51cba3ca2a098f8ce7e0d2d0c06fcff6/jars/classes.jar!/" />
+      <root url="file://D:/jp_android_sys/Gradleconfig/caches/transforms-2/files-2.1/51cba3ca2a098f8ce7e0d2d0c06fcff6/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://D:/jp_android_sys/Gradleconfig/caches/modules-2/files-2.1/com.facebook.android/facebook-common/5.8.0/e27566c73569640067f548133cd4b152615f77de/facebook-common-5.8.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

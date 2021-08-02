@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- A transition describes an animation via start and end state -->
+
+ <!--   <Transition
+
+        app:constraintSetStart="@+id/start"
+        app:constraintSetEnd="@+id/end"
+        app:duration="3000">
+    &lt;!&ndash;     app:touchAnchorId="@id/wallet_cardv"&ndash;&gt;
+    <OnSwipe
+        app:touchAnchorId="@id/text1_txv"
+
+        app:touchAnchorSide="top"
+        app:dragDirection="dragUp"
+        />
+    </Transition>-->
+    <Transition
+
+        app:constraintSetStart="@+id/start"
+        app:constraintSetEnd="@+id/end"
+        app:duration="3000">
+        <!--     app:touchAnchorId="@id/wallet_cardv"-->
+        <OnSwipe
+            app:touchAnchorId="@id/nscv"
+
+            app:touchAnchorSide="top"
+            app:dragDirection="dragUp"
+            />
+        <KeyFrameSet>
+        <KeyAttribute
+            app:framePosition="99"
+            android:alpha="0"
+            app:motionTarget="@id/text1_head_txv">
+
+        </KeyAttribute>
+
+        </KeyFrameSet>
+  <!--      <KeyFrameSet>
+            <KeyAttribute
+                app:framePosition="20"
+                android:alpha="0"
+                app:motionTarget="@id/banner_imv">
+
+            </KeyAttribute>
+
+
+
+
+        </KeyFrameSet>-->
+        <!--    <KeyFrameSet>
+                <KeyPosition
+                    app:framePosition="25"
+                    app:motionTarget="@id/wallet_cardv"
+                    app:keyPositionType="parentRelative"
+                    app:percentY="0.6"
+                    />
+                <KeyPosition
+                    app:framePosition="50"
+                    app:motionTarget="@id/wallet_cardv"
+                    app:keyPositionType="parentRelative"
+                    app:percentY="0.5"
+                    />
+                <KeyPosition
+                    app:framePosition="75"
+                    app:motionTarget="@id/wallet_cardv"
+                    app:keyPositionType="parentRelative"
+                    app:percentY="0.6"
+                    />
+                <KeyAttribute
+                    app:framePosition="50"
+                    app:motionTarget="@id/wallet_cardv"
+                    android:scaleY="2.0"
+                    android:scaleX="2.0"
+                    android:rotation="-360"
+                    />
+                <KeyAttribute
+                    app:framePosition="100"
+                    app:motionTarget="@id/wallet_cardv"
+                    android:rotation="-720"
+                    />
+                <KeyAttribute
+                    app:framePosition="0"
+                    app:motionTarget="@id/wallet_cardv">
+                    <CustomAttribute
+                        app:attributeName="colorFilter"
+                        app:customColorValue="#FFFFFF"
+                        />
+                </KeyAttribute>
+                <KeyAttribute
+                    app:framePosition="50"
+                    app:motionTarget="@id/wallet_cardv">
+                    <CustomAttribute
+                        app:attributeName="colorFilter"
+                        app:customColorValue="#FFB612"
+                        />
+                </KeyAttribute>
+                <KeyAttribute
+                    app:framePosition="100"
+                    app:motionTarget="@id/wallet_cardv">
+                    <CustomAttribute
+                        app:attributeName="colorFilter"
+                        app:customColorValue="#FFFFFF"
+                        />
+                </KeyAttribute>
+                <KeyAttribute
+                    app:framePosition="85"
+                    app:motionTarget="@id/credits"
+                    android:alpha="0.0"
+                    />
+            </KeyFrameSet>-->
+    </Transition>
+
+    <!-- Constraints to apply at the start of the animation -->
+    <ConstraintSet android:id="@+id/start">
+<!--            app:layout_constraintTop_toTopOf="@+id/close_dimv"
+            app:layout_constraintBottom_toBottomOf="@+id/close_dimv"
+            app:layout_constraintLeft_toRightOf="@+id/guideline_lefticon_right"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_righticon_left"-->
+
+        <Constraint
+            android:layout_width="match_parent"
+            android:id="@+id/banner_imv"
+app:layout_constraintHeight_percent=".4"
+            android:alpha="1.0"
+            android:visibility="visible"
+
+     />
+<!--        <Constraint
+
+            android:layout_width="wrap_content"
+            android:id="@+id/close_dimv"
+            app:height_percentage="8"
+            app:width_percentage="8"
+            app:layout_constraintTop_toTopOf="@+id/guideline_close_top"
+            app:layout_constraintLeft_toRightOf="@+id/guideline_h_left"
+
+
+            app:parameter="fixed_ratio"
+            android:visibility="visible"
+            android:src="@drawable/icn_back_1"
+
+            android:layout_height="wrap_content"
+            />-->
+        <Constraint
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/text1_head_txv"
+android:layout_marginTop="0dp"
+            android:alpha="0.0"
+            app:layout_constraintLeft_toRightOf="@+id/close_dimv"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_h_right"
+            app:layout_constraintTop_toTopOf="@+id/close_dimv"
+            app:layout_constraintBottom_toBottomOf="@+id/close_dimv"
+
+            />
+        <!--        android:layout_height="wrap_content"-->
+ <!--
+        <Constraint
+            android:alpha="1.0"
+            android:visibility="visible"
+            android:id="@id/tech_card_cview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/actionbar_barrier"
+            app:layout_constraintLeft_toRightOf="@+id/guideline_h_left"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_h_right"
+            />
+
+        <Constraint
+            android:alpha="1.0"
+            android:visibility="visible"
+            android:id="@+id/card_number_ctxv"
+            app:layout_constraintLeft_toLeftOf="@+id/tech_card_cview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tech_card_cview"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="25dp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:translationZ="10dp"
+            />
+-->
+
+    </ConstraintSet>
+
+    <!-- Constraints to apply at the end of the animation -->
+    <ConstraintSet android:id="@+id/end">
+
+
+
+        <Constraint
+            android:layout_width="match_parent"
+            android:id="@+id/banner_imv"
+            android:layout_height="0dp"
+            android:alpha="0.0"
+            app:layout_constraintHeight_percent=".1"
+
+   />     <!--   <Constraint
+
+        android:layout_width="wrap_content"
+        android:id="@+id/close_dimv"
+        app:height_percentage="8"
+        app:width_percentage="8"
+        app:layout_constraintTop_toTopOf="@+id/guideline_close_top"
+        app:layout_constraintLeft_toRightOf="@+id/guideline_h_left"
+
+
+        app:parameter="fixed_ratio"
+        android:visibility="visible"
+        android:src="@drawable/icn_back_1"
+
+        android:layout_height="wrap_content"
+        />-->
+
+        <Constraint
+            android:layout_width="0dp"
+            android:id="@+id/text1_head_txv"
+            android:layout_marginTop="0dp"
+            android:alpha="1.0"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/close_dimv"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_h_right"
+            app:layout_constraintTop_toTopOf="@+id/close_dimv"
+            app:layout_constraintBottom_toBottomOf="@+id/close_dimv"
+
+            />
+     <!--
+        <Constraint
+            android:id="@id/tech_card_cview"
+            android:layout_width="0dp"
+            android:alpha="0.0"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/actionbar_barrier"
+            app:layout_constraintLeft_toRightOf="@+id/guideline_h_left"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_h_right"
+            />
+
+        <Constraint
+            android:id="@+id/card_number_ctxv"
+            app:layout_constraintLeft_toLeftOf="@+id/tech_card_cview"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.0"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/tech_card_cview"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="25dp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:translationZ="10dp"
+            />-->
+
+
+
+
+    </ConstraintSet>
+</MotionScene>

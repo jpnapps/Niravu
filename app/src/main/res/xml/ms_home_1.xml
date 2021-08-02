@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <Transition
+
+        app:constraintSetStart="@+id/start"
+        app:constraintSetEnd="@+id/end"
+        app:duration="3000">
+        <!--     app:touchAnchorId="@id/wallet_cardv"-->
+        <!--          app:touchAnchorSide="top"
+            app:dragDirection="dragUp"-->
+        <OnSwipe
+            app:touchAnchorId="@id/list_rlay"
+
+            app:touchAnchorSide="top"
+            app:dragDirection="dragUp"
+
+
+            />
+        <KeyFrameSet>
+            <KeyAttribute
+                app:framePosition="50"
+                android:alpha="0.0"
+                app:motionTarget="@id/banner_slideview">
+
+            </KeyAttribute>
+
+        </KeyFrameSet>
+
+    </Transition>
+
+    <!-- Constraints to apply at the start of the animation -->
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+            android:alpha="1.0"
+            android:id="@+id/banner_slideview"
+
+
+            android:layout_marginTop="0dp"
+            app:layout_constraintLeft_toRightOf="@+id/g_card_left"
+            app:layout_constraintRight_toLeftOf="@+id/g_card_right"
+            app:layout_constraintTop_toTopOf="@+id/parent"
+            app:layout_constraintDimensionRatio="H,16:4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+        <Constraint
+            android:alpha="1.0"
+            android:id="@+id/small_menus_lay"
+            app:layout_constraintTop_toBottomOf="@+id/banner_slideview"
+            app:layout_constraintRight_toLeftOf="@+id/g_card_right"
+            app:layout_constraintLeft_toRightOf="@+id/g_card_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <Constraint
+
+            android:id="@+id/list_rlay"
+            android:alpha="1.0"
+
+
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintLeft_toRightOf="@+id/g_card_left"
+            app:layout_constraintRight_toLeftOf="@+id/g_card_right"
+            app:layout_constraintTop_toBottomOf="@+id/mode_barrier_btm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            />
+
+
+    </ConstraintSet>
+
+    <!-- Constraints to apply at the end of the animation -->
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:alpha="0.0"
+            android:id="@+id/banner_slideview"
+
+android:visibility="gone"
+            android:layout_marginTop="0dp"
+            app:layout_constraintLeft_toRightOf="@+id/g_card_left"
+            app:layout_constraintRight_toLeftOf="@+id/g_card_right"
+            app:layout_constraintTop_toTopOf="@+id/parent"
+            app:layout_constraintDimensionRatio="H,16:4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+        <Constraint
+            android:alpha="0.0"
+            android:visibility="gone"
+            android:id="@+id/small_menus_lay"
+            app:layout_constraintTop_toBottomOf="@+id/banner_slideview"
+            app:layout_constraintRight_toLeftOf="@+id/g_card_right"
+            app:layout_constraintLeft_toRightOf="@+id/g_card_left"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+        <Constraint
+            android:id="@+id/list_rlay"
+            android:alpha="1.0"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintLeft_toRightOf="@+id/g_card_left"
+            app:layout_constraintRight_toLeftOf="@+id/g_card_right"
+            app:layout_constraintTop_toBottomOf="@+id/guideline_mode_top"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            />
+
+
+
+
+
+    </ConstraintSet>
+
+
+
+
+
+
+
+
+
+
+</MotionScene>

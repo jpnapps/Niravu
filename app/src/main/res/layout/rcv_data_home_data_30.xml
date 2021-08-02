@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    style="@style/Base_Home"
+    android:background="@color/transparent"
+    xmlns:tools="http://schemas.android.com/tools"
+     android:id="@+id/clay"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <xyz.sangcomz.chameleon.Chameleon
+        android:id="@+id/chameleon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_2sdp"
+        android:paddingRight="@dimen/_2sdp"
+
+
+
+        android:layout_gravity="center"
+        android:visibility="visible"
+
+
+
+        app:emptyButtonText="\t Tap to Refresh \t"
+        app:emptyButtonTextColor="@color/white"
+        app:emptyButtonBackgroundColor="@color/cursor1_color"
+        app:emptyButtonTextSize="12sp"
+        app:emptyDrawable="@drawable/ict_chamelon_error2"
+        app:emptySubText=""
+        app:emptyTextGravity="center"
+        app:emptySubTextGravity="center"
+        app:emptyText="@string/empty_trans"
+
+        app:errorButtonBackgroundColor="@color/cursor1_color"
+        app:errorButtonText="\t Tap to Retry \t"
+        app:errorButtonTextColor="#ffffff"
+        app:errorButtonTextSize="12sp"
+        app:errorDrawable="@drawable/ict_chamelon_wifi_server_er"
+        app:errorSubText=""
+        app:errorText="@string/error2"
+        app:errorTextGravity="center"
+        app:errorSubTextGravity="center"
+
+
+        app:isLargeProgress="false"
+        app:progressDrawable="@drawable/custom_progressbar_drawable"
+        app:useEmptyButton="false"
+        app:useErrorButton="true"
+        app:dState="CONTENT"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_1sdp"
+            android:paddingBottom="@dimen/_1sdp"
+            android:clipToPadding="false"
+            android:nestedScrollingEnabled="true"
+            android:overScrollMode="never"
+            android:scrollbarStyle="outsideOverlay"
+            android:visibility="visible"
+
+            tools:itemCount="5"
+            tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            tools:listitem="@layout/rcv_item_card_1"
+            tools:orientation="vertical"
+            tools:spanCount="2"
+
+            />
+    </xyz.sangcomz.chameleon.Chameleon>
+</androidx.constraintlayout.widget.ConstraintLayout>

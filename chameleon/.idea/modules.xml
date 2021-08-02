@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Techbank.iml" filepath="$PROJECT_DIR$/../Techbank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../bottom-bar/bottom-bar.iml" filepath="$PROJECT_DIR$/../bottom-bar/bottom-bar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chameleon.iml" filepath="$PROJECT_DIR$/chameleon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../countrypicker/countrypicker.iml" filepath="$PROJECT_DIR$/../countrypicker/countrypicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../datepickermaterial/datepickermaterial.iml" filepath="$PROJECT_DIR$/../datepickermaterial/datepickermaterial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../discrete/discrete.iml" filepath="$PROJECT_DIR$/../discrete/discrete.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../jgraph/jgraph.iml" filepath="$PROJECT_DIR$/../jgraph/jgraph.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../slideup/slideup.iml" filepath="$PROJECT_DIR$/../slideup/slideup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../switchdatetime/switchdatetime.iml" filepath="$PROJECT_DIR$/../switchdatetime/switchdatetime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../utilitylibrary/utilitylibrary.iml" filepath="$PROJECT_DIR$/../utilitylibrary/utilitylibrary.iml" />
+    </modules>
+  </component>
+</project>

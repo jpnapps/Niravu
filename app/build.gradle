@@ -1,0 +1,248 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.jpndev.niravu"
+
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+
+        versionCode 6
+        versionName "1.5"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file(project.property("MyApp.signing"))
+            storePassword project.property("MyApp.signing.password")
+            keyAlias project.property("MyApp.signing.alias")
+            keyPassword project.property("MyApp.signing.alias.password")
+        }
+        release {
+            storeFile file(project.property("MyApp.signing"))
+            storePassword project.property("MyApp.signing.password")
+            keyAlias project.property("MyApp.signing.alias")
+            keyPassword project.property("MyApp.signing.alias.password")
+        }
+    }
+
+    buildTypes {
+
+
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            debuggable false
+        }
+        debug {
+
+            //test
+            //debug=true
+            minifyEnabled false
+            debuggable true
+        }
+        flavorDimensions "default"
+        productFlavors {
+            suresh {
+                applicationIdSuffix ".alpha"
+
+                buildConfigField "String", "BASE_URL", '"http://sarintechy.xyz/frontend/web/mock-tests/"'
+                buildConfigField "String", "BASE_BACKEND_URL", '"http://sarintechy.xyz/backend/web/1/"'
+                buildConfigField "String", "MID_URL", '"view?id="'
+
+                buildConfigField "Boolean", "isShowApi", 'true'
+                buildConfigField "Boolean", "isSuperUser", 'true'
+                buildConfigField "Boolean", "isLive", 'false'
+
+                buildConfigField "String", "API_NAME", '"Api : suresh"'
+
+
+            }
+            beta {
+                applicationIdSuffix ".testing"
+                buildConfigField "String", "BASE_URL", '"http://sarintechy.xyz/frontend/web/mock-tests/"'
+                buildConfigField "String", "BASE_BACKEND_URL", '"http://sarintechy.xyz/backend/web/1/"'
+                buildConfigField "String", "MID_URL", '"view?id="'
+
+
+                buildConfigField "Boolean", "isShowApi", 'true'
+                buildConfigField "Boolean", "isSuperUser", 'true'
+                buildConfigField "Boolean", "isLive", 'false'
+
+                buildConfigField "String", "API_NAME", '"Api : testing"'
+
+
+            }
+            prod {
+                applicationIdSuffix ".prod"
+                buildConfigField "String", "BASE_URL", '"http://sarintechy.xyz/frontend/web/mock-tests/"'
+                buildConfigField "String", "BASE_BACKEND_URL", '"http://sarintechy.xyz/backend/web/1/"'
+                buildConfigField "String", "MID_URL", '"view?id="'
+
+                buildConfigField "Boolean", "isShowApi", 'true'
+                buildConfigField "Boolean", "isLive", 'true'
+                buildConfigField "Boolean", "isSuperUser", 'true'
+
+                buildConfigField "String", "API_NAME", '"Api : Live with copy "'
+
+                resValue "string", "digit_text", '""'
+                resValue "string", "two_text", '""'
+                resValue "string", "small_text", '" "'
+                resValue "string", "medium2_text", '""'
+                resValue "string", "mediuml_text", '""'
+                resValue "string", "long_text", '""'
+
+
+            }
+            live {
+
+                buildConfigField "String", "API_NAME", '""'
+                buildConfigField "Boolean", "isShowApi", 'false'
+
+                buildConfigField "String", "BASE_URL", '"http://sarintechy.xyz/frontend/web/mock-tests/"'
+                buildConfigField "String", "BASE_BACKEND_URL", '"http://sarintechy.xyz/backend/web/1/"'
+                buildConfigField "String", "MID_URL", '"view?id="'
+                /*          buildConfigField "Boolean", "isLive", 'true'
+                buildConfigField "Boolean", "isShowApi", 'true'
+                buildConfigField "Boolean", "isSuperUser", 'true'*/
+                buildConfigField "Boolean", "isLive", 'true'
+                buildConfigField "Boolean", "isShowApi", 'false'
+                buildConfigField "Boolean", "isSuperUser", 'false'
+                resValue "string", "digit_text", '""'
+                resValue "string", "two_text", '""'
+                resValue "string", "small_text", '""'
+                resValue "string", "medium2_text", '""'
+                resValue "string", "mediuml_text", '""'
+                resValue "string", "long_text", '""'
+
+
+            }
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+        disable 'RestrictedApi'
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+
+    androidExtensions {
+        experimental = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+}
+
+apply plugin: 'com.akaita.android.easylauncher'
+easylauncher {
+    // iconNames "@mipmap/ic_launcher_foreground"
+    foregroundIconNames "@mipmap/ic_launcher" // Foreground of adaptive launcher icon
+
+    productFlavors {
+        suresh {
+            filters = grayscaleFilter()
+            filters = [customColorRibbonFilter("Suresh", "#A6E49A", "#FFFFFF", "bottom", 0.25)]
+        }
+        beta {
+            // Add one more filter to all `qa` variants
+            // filters = redRibbonFilter()
+            filters = [customColorRibbonFilter("Testing", "#e8d123", "#FFFFFF", "bottom", 0.25)]
+        }
+        prod {
+            filters = [
+                    customColorRibbonFilter("Prod", "#414D5B", "#FFFFFF", "bottom", 0.25)
+            ]
+        }
+        live { enable false }
+    }
+}
+configurations {
+
+
+    implementation {
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.android.support', module: 'support-annotation'
+        exclude group: 'com.android.support', module: 'support-compat'
+    }
+
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.0.2'
+    implementation 'com.google.android.material:material:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
+    //implementation 'com.github.VRGsoftUA:RollingLayoutManager:+'
+
+
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta4'
+
+    def lifecycle_version = "2.0.0"
+    // ViewModel and LiveData
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+
+
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+
+
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.4'
+
+
+    implementation 'androidx.room:room-runtime:2.0.0-beta01'
+    annotationProcessor 'androidx.room:room-compiler:2.0.0-beta01'
+
+
+    implementation 'com.google.code.gson:gson:2.3'
+    implementation 'com.squareup:otto:1.3.6'
+    implementation 'com.kaopiz:kprogresshud:1.0.4'
+    def multidex_version = "2.0.1"
+    implementation "androidx.multidex:multidex:$multidex_version"
+
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation project(path: ':utilitylibrary')
+    implementation project(path: ':chameleon')
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+    implementation 'com.github.smarteist:autoimageslider:1.3.7'
+    implementation 'com.google.android.material:material:1.0.0'
+    //implementation "io.reactivex.rxjava2:rxandroid:2.0.2"
+    // implementation "io.reactivex.rxjava2:rxjava:2.2.9"
+
+
+    // Material Dialog Library
+    implementation 'com.shreyaspatil:MaterialDialog:2.1'
+
+    // Lottie Animation Library
+    def lottieVersion = "3.4.1"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
+}

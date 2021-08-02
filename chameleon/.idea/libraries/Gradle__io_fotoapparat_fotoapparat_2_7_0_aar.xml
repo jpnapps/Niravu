@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: io.fotoapparat:fotoapparat:2.7.0@aar">
+    <CLASSES>
+      <root url="jar://D:/jp_android_sys/Gradleconfig/caches/transforms-2/files-2.1/d12079c69e60611e42f27fc4398bc661/jars/classes.jar!/" />
+      <root url="file://D:/jp_android_sys/Gradleconfig/caches/transforms-2/files-2.1/d12079c69e60611e42f27fc4398bc661/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://D:/jp_android_sys/Gradleconfig/caches/modules-2/files-2.1/io.fotoapparat/fotoapparat/2.7.0/bff6e2cf5d431c0906e347236f30a9c19542f745/fotoapparat-2.7.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

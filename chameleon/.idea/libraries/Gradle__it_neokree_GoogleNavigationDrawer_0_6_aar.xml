@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: it.neokree:GoogleNavigationDrawer:0.6@aar">
+    <CLASSES>
+      <root url="jar://D:/jp_android_sys/Gradleconfig/caches/transforms-2/files-2.1/6fd00f2b3ab95ac701c3da386ba3888a/jars/classes.jar!/" />
+      <root url="file://D:/jp_android_sys/Gradleconfig/caches/transforms-2/files-2.1/6fd00f2b3ab95ac701c3da386ba3888a/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://D:/jp_android_sys/Gradleconfig/caches/modules-2/files-2.1/it.neokree/GoogleNavigationDrawer/0.6/65ed00d6b9842e2658a89a3c8ae8164cc7f47b54/GoogleNavigationDrawer-0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

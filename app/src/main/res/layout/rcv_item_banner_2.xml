@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v_26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.01" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_xleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_xright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.98"/>
+
+    <!--        android:layout_marginTop="@dimen/_10sdp"-->
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/img_slideview"
+
+        app:cardCornerRadius="@dimen/_4sdp"
+        app:cardBackgroundColor="@color/black"
+
+        app:layout_constraintLeft_toRightOf="@+id/guideline_xleft"
+        app:layout_constraintRight_toLeftOf="@+id/guideline_xright"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_v_26"
+        app:layout_constraintDimensionRatio="H,16:4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="10dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="?attr/bg_border_1"
+        app:sliderIndicatorUnselectedColor="?attr/bg_border_2"
+        app:sliderScrollTimeInSec="1"
+        app:sliderStartAutoCycle="true" />
+</androidx.constraintlayout.widget.ConstraintLayout>

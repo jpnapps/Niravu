@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jpndev.niravu.quiz.QuizResultActivity">
+    <com.jpndev.niravu.utility.GradientChart
+        android:id="@+id/gradientChart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:plusColorStart="#2196F3"
+        app:plusColorEnd="#90CAF9"
+        app:minusColorStart="#90CAF9"
+        app:minusColorEnd="#90CAF9"
+        app:zoom="10"
+        app:isBezier="true"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_x_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"
+
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_x_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05"
+
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_x_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"
+
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/g_close_left"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/g_h_right"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/g_h_top"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.001"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/g_close_top"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02"/>
+    <com.jpndev.utilitylibrary.DeviceFitImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/close_dimv"
+        app:height_percentage="6"
+        app:width_percentage="8"
+        app:layout_constraintTop_toTopOf="@+id/g_close_top"
+        app:layout_constraintLeft_toRightOf="@+id/g_close_left"
+
+        android:tint="?attr/tint_1"
+        app:parameter="fixed_ratio"
+        android:visibility="visible"
+        android:src="@drawable/icn_back_1"
+
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/view_answer_txv"
+        app:layout_constraintRight_toLeftOf="@+id/g_x_right"
+        app:layout_constraintTop_toBottomOf="@+id/g_x_top"
+        style="@style/Base_TXV_1"
+        android:textSize="@dimen/_16ssp"
+        android:text="View Answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/view_barrier"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="view_answer_txv,g_scoreboard_top"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_scoreboard_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2"
+
+        />
+    <com.jpndev.niravu.utility.RoundableLayout
+        android:id="@+id/scoreboard_ro_lay"
+        android:layout_width="0dp"
+        app:layout_constraintLeft_toRightOf="@+id/g_x_left"
+        app:layout_constraintRight_toLeftOf="@+id/g_x_right"
+        app:layout_constraintTop_toBottomOf="@+id/view_barrier"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:elevation="5dp"
+        android:translationZ="5dp"
+        app:backgroundColor="?attr/bg_list_1"
+        app:cornerLeftBottom="0dp"
+        app:cornerLeftSide="25dp"
+        app:cornerLeftTop="40dp"
+
+        app:cornerRightBottom="0dp"
+        app:cornerRightSide="25dp"
+        app:cornerRightTop="40dp"
+
+        app:dashLineGap="4dp"
+        app:dashLineWidth="0dp"
+
+
+        app:strokeLineColor="#222222"
+        app:strokeLineWidth="0dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_20sdp"
+
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/g_score_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.2"
+
+
+                />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/g_scroe_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.1"
+
+                />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/g_scroe_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.98"
+
+                />
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/g_scroe_middle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.65"
+
+                />
+            <TextView
+                android:id="@+id/scroe_txv"
+                app:layout_constraintTop_toBottomOf="@+id/g_score_top"
+                app:layout_constraintLeft_toRightOf="@+id/g_scroe_left"
+                app:layout_constraintRight_toLeftOf="@+id/g_scroe_middle"
+                style="@style/Base_TXV_1"
+                android:textSize="@dimen/_16ssp"
+                android:text="Score"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/score_value_txv"
+                style="@style/Base_TXV_1"
+                app:layout_constraintTop_toBottomOf="@+id/g_score_top"
+                app:layout_constraintLeft_toRightOf="@+id/g_scroe_middle"
+                app:layout_constraintRight_toLeftOf="@+id/g_scroe_right"
+                android:textSize="@dimen/_16ssp"
+                android:fontFamily="@font/sofia_pro_bold"
+                android:text="@string/digit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.constraintlayout.widget.Barrier
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/score_barrier"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="score_value_txv,scroe_txv"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/_8sdp"
+                android:id="@+id/answer_txv"
+                app:layout_constraintTop_toBottomOf="@+id/score_barrier"
+                app:layout_constraintLeft_toRightOf="@+id/g_scroe_left"
+                app:layout_constraintRight_toLeftOf="@+id/g_scroe_middle"
+                style="@style/Base_TXV_1"
+            android:fontFamily="@font/sofia_pro_regular"
+                android:textSize="@dimen/_16ssp"
+                android:text="Answered"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="@dimen/_8sdp"
+                android:id="@+id/answer_value_txv"
+                style="@style/Base_TXV_1"
+                app:layout_constraintTop_toBottomOf="@+id/score_barrier"
+                app:layout_constraintLeft_toRightOf="@+id/g_scroe_middle"
+                app:layout_constraintRight_toLeftOf="@+id/g_scroe_right"
+                android:textSize="@dimen/_16ssp"
+                android:fontFamily="@font/sofia_pro_bold"
+                android:text="@string/digit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <androidx.constraintlayout.widget.Barrier
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/answered_barrier"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="answer_value_txv,answer_txv"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/_8sdp"
+                android:id="@+id/unanswer_txv"
+                app:layout_constraintTop_toBottomOf="@+id/answered_barrier"
+                app:layout_constraintLeft_toRightOf="@+id/g_scroe_left"
+                app:layout_constraintRight_toLeftOf="@+id/g_scroe_middle"
+                style="@style/Base_TXV_1"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:textSize="@dimen/_16ssp"
+                android:text="Unanswered"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/unanswer_value_txv"
+                style="@style/Base_TXV_1"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintTop_toBottomOf="@+id/answered_barrier"
+                app:layout_constraintLeft_toRightOf="@+id/g_scroe_middle"
+                app:layout_constraintRight_toLeftOf="@+id/g_scroe_right"
+                android:textSize="@dimen/_16ssp"
+                android:fontFamily="@font/sofia_pro_bold"
+                android:text="@string/digit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+
+            <androidx.constraintlayout.widget.Barrier
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/unanswer_barrier"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="unanswer_value_txv,unanswer_txv"/>
+
+            <TextView
+                android:id="@+id/wrong_answer_txv"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintTop_toBottomOf="@+id/unanswer_barrier"
+                app:layout_constraintLeft_toRightOf="@+id/g_scroe_left"
+                app:layout_constraintRight_toLeftOf="@+id/g_scroe_middle"
+                style="@style/Base_TXV_1"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:textSize="@dimen/_16ssp"
+                android:text="Wrong answered"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/wrong_answer_value_txv"
+                style="@style/Base_TXV_1"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintTop_toBottomOf="@+id/unanswer_barrier"
+                app:layout_constraintLeft_toRightOf="@+id/g_scroe_middle"
+                app:layout_constraintRight_toLeftOf="@+id/g_scroe_right"
+                android:textSize="@dimen/_16ssp"
+                android:fontFamily="@font/sofia_pro_bold"
+                android:text="@string/digit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </com.jpndev.niravu.utility.RoundableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

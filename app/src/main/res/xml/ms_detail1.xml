@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <Transition
+
+        app:constraintSetStart="@+id/start"
+        app:constraintSetEnd="@+id/end"
+        app:duration="3000">
+        <!--     app:touchAnchorId="@id/wallet_cardv"-->
+        <OnSwipe
+            app:touchAnchorId="@id/nscv"
+
+            app:touchAnchorSide="top"
+            app:dragDirection="dragUp"
+            />
+        <KeyFrameSet>
+            <KeyAttribute
+                app:framePosition="99"
+                android:alpha="0"
+                app:motionTarget="@id/text1_head_txv">
+
+            </KeyAttribute>
+
+        </KeyFrameSet>
+
+    </Transition>
+
+    <!-- Constraints to apply at the start of the animation -->
+    <ConstraintSet android:id="@+id/start">
+
+
+
+        <Constraint
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/text1_head_txv"
+            android:layout_marginTop="0dp"
+            android:alpha="0.0"
+            app:layout_constraintLeft_toRightOf="@+id/close_dimv"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_h_right"
+            app:layout_constraintTop_toTopOf="@+id/close_dimv"
+            app:layout_constraintBottom_toBottomOf="@+id/close_dimv"
+
+            />
+
+
+    </ConstraintSet>
+
+    <!-- Constraints to apply at the end of the animation -->
+    <ConstraintSet android:id="@+id/end">
+
+
+
+        <Constraint
+            android:layout_width="0dp"
+            android:id="@+id/text1_head_txv"
+            android:layout_marginTop="0dp"
+            android:alpha="1.0"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/close_dimv"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_h_right"
+            app:layout_constraintTop_toTopOf="@+id/close_dimv"
+            app:layout_constraintBottom_toBottomOf="@+id/close_dimv"
+
+            />
+
+
+
+
+
+    </ConstraintSet>
+</MotionScene>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ogaclejapan.smarttablayout:library:2.0.0@aar">
+    <CLASSES>
+      <root url="jar://D:/jp_android_sys/Gradleconfig/caches/transforms-2/files-2.1/5962394187ae0a089074e4c20a0945b5/jars/classes.jar!/" />
+      <root url="file://D:/jp_android_sys/Gradleconfig/caches/transforms-2/files-2.1/5962394187ae0a089074e4c20a0945b5/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://D:/jp_android_sys/Gradleconfig/caches/modules-2/files-2.1/com.ogaclejapan.smarttablayout/library/2.0.0/e877fb64f8bcf6e9b5e32f09e7f6fdc71030b3d8/library-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

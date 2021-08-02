@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="primaryTextColor" format="reference"/>
+    <attr name="buttonNormalColor" format="reference"/>
+    <attr name="buttonHighlightColor" format="reference" />
+    <attr name="buttonTextColor" format="reference" />
+    <attr name="iconColor" format="reference" />
+
+    <attr name="textViewStyle" format="reference" />
+    <attr name="primaryButtonTheme" format="reference" />
+
+    <attr name="bg_1" format="reference" />
+
+    <attr name="bg_2" format="reference" />
+
+    <attr name="bg_list_1" format="reference" />
+
+    <attr name="bg_list_2" format="reference" />
+
+    <attr name="bg_home_1" format="reference" />
+
+    <attr name="bg_home_2" format="reference" />
+
+    <attr name="bg_detail_1" format="reference" />
+
+    <attr name="bg_detail_2" format="reference" />
+
+    <attr name="bg_rcv_item_1" format="reference" />
+    <attr name="bg_rcv_item_2" format="reference" />
+
+
+    <attr name="bg_card_1" format="reference" />
+    <attr name="bg_card_2" format="reference" />
+
+    <attr name="bg_view_1" format="reference" />
+    <attr name="bg_view_2" format="reference" />
+
+
+    <attr name="bg_border_1" format="reference" />
+    <attr name="bg_border_2" format="reference" />
+
+
+    <attr name="text_color_1" format="reference"/>
+    <attr name="text_color_2" format="reference"/>
+    <attr name="text_color_3" format="reference"/>
+    <attr name="text_color_4" format="reference"/>
+    <attr name="text_color_5" format="reference"/>
+
+    <attr name="btn_text_color_1" format="reference"/>
+    <attr name="btn_text_color_2" format="reference"/>
+
+
+    <attr name="tint_1" format="reference" />
+    <attr name="tint_2" format="reference" />
+
+    <attr name="gradient_1" format="reference" />
+    <attr name="gradient_2" format="reference" />
+    <attr name="gradient_3" format="reference" />
+    <attr name="gradient_4" format="reference" />
+
+    <declare-styleable name="GradientChart">
+
+        <!-- chart gradient colors -->
+        <attr name="chartLineColor" format="color"/>
+        <attr name="plusColorStart" format="color"/>
+        <attr name="plusColorEnd" format="color"/>
+        <attr name="minusColorStart" format="color"/>
+        <attr name="minusColorEnd" format="color"/>
+
+        <!-- other -->
+        <attr name="isBezier" format="boolean"/>
+        <attr name="bezierIntensity" format="float"/>
+        <attr name="zoom" format="integer"/>
+
+    </declare-styleable>
+    <declare-styleable name="RoundableLayout">
+        <attr name="cornerLeftTop" format="dimension"/>
+        <attr name="cornerRightTop" format="dimension"/>
+        <attr name="cornerLeftBottom" format="dimension"/>
+        <attr name="cornerRightBottom" format="dimension"/>
+        <attr name="backgroundColor" format="color"/>
+        <attr name="strokeLineWidth" format="dimension"/>
+        <attr name="strokeLineColor" format="color"/>
+        <attr name="dashLineWidth" format="dimension"/>
+        <attr name="dashLineGap" format="dimension"/>
+
+        <attr name="cornerLeftSide" format="dimension"/>
+        <attr name="cornerRightSide" format="dimension"/>
+
+        <attr name="cornerAll" format="dimension"/>
+    </declare-styleable>
+
+</resources>

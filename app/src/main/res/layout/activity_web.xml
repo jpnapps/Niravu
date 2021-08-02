@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_black_85"
+    android:padding="0dp"
+
+    android:orientation="vertical"
+    >
+    <!--    style="@style/Base_Home"-->
+    <!--    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">-->
+<!--    <RelativeLayout
+        android:id="@+id/action_bar"
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:visibility="visible"
+
+        android:orientation="horizontal"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/action_bar_top_llay"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:orientation="vertical"
+            >-->
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/action_bar"
+                android:padding="@dimen/_4sdp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/left_llay"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content">
+                    <com.jpndev.utilitylibrary.DeviceFitImageView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/back_imv"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_close_black"
+                        android:tint="?attr/tint_2"
+                        app:width_percentage="8"
+                        app:parameter="aspect_width"
+                        android:padding="3dp"
+                        android:visibility="visible"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentStart="true" />
+
+                    <com.jpndev.utilitylibrary.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/back_imv"
+                        android:id="@+id/left_txv"
+                        android:paddingLeft="2dp"
+                        android:textSize="@dimen/sp18"
+                        android:visibility="gone"
+                        android:text=""
+
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+                <com.jpndev.utilitylibrary.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text=""
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    app:fontString="@string/ubuntu_regular"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sp22"
+                    android:id="@+id/title_txv"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/right_llay"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="5dp"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content">
+
+                    <com.jpndev.utilitylibrary.DeviceFitImageView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/copy_dimv"
+                        android:layout_height="wrap_content"
+
+                        app:parameter="fixed_ratio"
+                        app:width_percentage="6"
+                        app:height_percentage="6"
+                        android:visibility="gone"
+                        android:scaleType="fitCenter"
+                        android:layout_marginRight="6dp"
+                        android:src="@drawable/ic_content_copy_black_24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentEnd="true" />
+                    <com.jpndev.utilitylibrary.DeviceFitImageView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/logo_imv"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:width_percentage="20"
+
+                        android:layout_marginRight="6dp"
+                        android:src="@drawable/ic_ccrbx_logo"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentEnd="true" />
+
+                    <com.jpndev.utilitylibrary.DeviceFitImageView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/right_imv"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:width_percentage="5"
+                        android:src="@drawable/reload"
+                        android:layout_marginRight="4dp"
+                        android:tint="?attr/tint_2"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentEnd="true" />
+                </LinearLayout>
+            </RelativeLayout>
+<!--        </LinearLayout>
+    </RelativeLayout>-->
+
+    <WebView
+
+        android:id="@+id/webview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:padding="0dp"
+        android:hardwareAccelerated="true"
+        android:focusableInTouchMode="true"
+
+        />
+
+</LinearLayout>
+
+
+
+    <!--    <com.gautam.shalommediaandroid.MyWebView
+
+         android:id="@+id/webview1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         /> -->
+
+
+    <!--
+    </LinearLayout>-->

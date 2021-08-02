@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.sucho:placepicker:0.1.4@aar">
+    <CLASSES>
+      <root url="jar://D:/jp_android_sys/Gradleconfig/caches/transforms-2/files-2.1/7126fc83917d57f4d4831561ee25103e/jars/classes.jar!/" />
+      <root url="file://D:/jp_android_sys/Gradleconfig/caches/transforms-2/files-2.1/7126fc83917d57f4d4831561ee25103e/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://D:/jp_android_sys/Gradleconfig/caches/modules-2/files-2.1/com.sucho/placepicker/0.1.4/c776814cc285ddfca5713bdb57db11975c8b60b6/placepicker-0.1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

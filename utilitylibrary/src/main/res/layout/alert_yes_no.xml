@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_margin="15dp"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/white"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:jp="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--android:background="@drawable/blue_round_square"-->
+        <!-- android:background="@drawable/blue_round_square"-->
+        <com.jpndev.utilitylibrary.CustomFontTextView
+            android:id="@+id/title_dtxv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Alert heading"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp18" />
+
+        <com.jpndev.utilitylibrary.CustomFontTextView
+            android:id="@+id/desc_dtxv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_dtxv"
+            android:maxLines="5"
+            android:visibility="gone"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="Alert content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp18"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_fit"
+            android:id="@+id/view"
+            android:layout_above="@+id/linr"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/desc_dtxv"
+            android:id="@+id/linr"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.jpndev.utilitylibrary.CustomFontTextView
+                android:id="@+id/dismis_dtxv"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_round_left_square"
+                android:gravity="center"
+                android:text="No"
+                android:textColor="@color/app_black_txt"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp16"
+                jp:percentage_width="49" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:background="@color/grey_fit" />
+
+            <com.jpndev.utilitylibrary.CustomFontTextView
+                android:id="@+id/ok_dtxv"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_round_right_square"
+                android:gravity="center"
+                android:text="Yes"
+                android:textColor="@color/app_black_txt"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp16"
+                jp:percentage_width="49" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_centerInParent="true"
+
+android:layout_margin="15dp"
+    app:cardCornerRadius="6dp"
+    app:contentPadding="0dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="4dp"
+    app:cardMaxElevation="6dp"
+    android:layout_height="wrap_content">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:padding="2dp">
+    &lt;!&ndash;android:background="@drawable/blue_round_square"&ndash;&gt;
+&lt;!&ndash; android:background="@drawable/blue_round_square"&ndash;&gt;
+    <com.jpndev.utilitylibrary.CustomFontTextView
+        android:id="@+id/title_dtxv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Alert heading"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp18" />
+
+    <com.jpndev.utilitylibrary.CustomFontTextView
+        android:id="@+id/desc_dtxv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_dtxv"
+        android:maxLines="5"
+        android:visibility="gone"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="Alert content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp18"
+        />
+   &lt;!&ndash; <Te
+        android:id="@+id/anot_edt"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/title_dtxv"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/app_white_bg"
+        android:gravity="start"
+        android:maxLines="4"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@color/fluid_black" />&ndash;&gt;
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/desc_dtxv"
+        android:background="@color/grey_fit"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingTop="1dp"
+
+        android:weightSum="2">
+
+         <com.jpndev.utilitylibrary.CustomFontTextView
+            android:id="@+id/dismis_dtxv"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_round_left_square"
+            android:gravity="center"
+            android:text="No"
+            android:textColor="@color/app_black_txt"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp16"
+            jp:percentage_width="49" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:background="@color/grey_fit" />
+
+         <com.jpndev.utilitylibrary.CustomFontTextView
+            android:id="@+id/ok_dtxv"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_round_right_square"
+            android:gravity="center"
+            android:text="Yes"
+            android:textColor="@color/app_black_txt"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp16"
+            jp:percentage_width="49" />
+    </LinearLayout>
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>-->
+
+
+

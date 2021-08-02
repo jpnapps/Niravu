@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--    android:layout_marginTop="@dimen/_2sdp"
+    android:layout_marginBottom="@dimen/_2sdp"-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Base_Home"
+    android:id="@+id/clay"
+    android:paddingBottom="@dimen/_5sdp"
+    android:paddingTop="@dimen/_5sdp"
+android:background="@drawable/shape_1_selector"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/g_top"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.003"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_xleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0001" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_xright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.99" />
+    <!--        app:layout_constraintTop_toTopOf="@+id/option_txv"
+        app:layout_constraintBottom_toBottomOf="@+id/option_txv"-->
+<!--    <com.jpndev.utilitylibrary.DeviceFitImageView
+        app:layout_constraintLeft_toRightOf="@+id/g_xleft"
+        app:layout_constraintTop_toBottomOf="@+id/g_top"
+
+        android:id="@+id/option_dimv"
+        style="@style/DIMV_Template1"
+        app:height_percentage="6"
+        app:width_percentage="6"
+        app:parameter="fixed_ratio"
+        android:scaleType="fitCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>-->
+    <LinearLayout
+        app:layout_constraintLeft_toRightOf="@+id/g_xleft"
+        app:layout_constraintRight_toLeftOf="@+id/g_xright"
+        app:layout_constraintTop_toBottomOf="@+id/g_top"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:background="@drawable/shape_1_selector"
+            android:backgroundTint="@color/grey_color_1"
+            style="@style/Base_TXV_1"
+            android:gravity="left"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:id="@+id/option_no_txv"
+            android:padding="@dimen/_6sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/character_text"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@drawable/color_1_selector"
+      />
+        <TextView
+            android:id="@+id/option_txv"
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+android:fontFamily="@font/sofia_pro_regular"
+            android:text="@string/small_text"
+            style="@style/Base_TXV_1"
+            android:textSize="@dimen/_12ssp"
+
+            />
+
+
+
+    </LinearLayout>
+
+  <!--  <TextView
+        android:background="@drawable/ccrb_rounded_green_rectangle"
+        android:backgroundTint="?attr/bg_border_1"
+        style="@style/Base_TXV_1"
+        android:gravity="center"
+        android:id="@+id/option_no_txv"
+        android:padding="@dimen/_12sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/digit_text"
+        app:layout_constraintLeft_toRightOf="@+id/g_xleft"
+        app:layout_constraintBottom_toBottomOf="@+id/option_txv"
+        app:layout_constraintTop_toTopOf="@+id/option_txv"/>
+    <TextView
+        android:id="@+id/option_txv"
+        android:layout_marginTop="0dp"
+        android:layout_width="0dp"
+
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/option_no_txv"
+        app:layout_constraintRight_toLeftOf="@+id/g_xright"
+        app:layout_constraintTop_toBottomOf="@+id/g_top"
+         android:text="@string/small_text"
+        style="@style/Base_TXV_1"
+        android:textSize="@dimen/_16ssp"
+
+        />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

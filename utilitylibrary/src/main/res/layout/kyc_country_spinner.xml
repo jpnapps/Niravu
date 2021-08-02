@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:background="@color/app_white_bg"
+    android:orientation="horizontal"
+    android:id="@+id/spinner_bg_rlay"
+    android:paddingTop="2dp"
+    android:paddingBottom="1dp"
+    android:layout_height="wrap_content">
+    <!--android:background="@color/ccrbYellow_wt1"-->
+
+    <View
+        android:id="@+id/left_view"
+        android:layout_width="10dp"
+
+        android:layout_height="wrap_content"/>
+    <com.jpndev.utilitylibrary.CustomFontTextView
+        android:id="@+id/spin_title_txv"
+
+        android:singleLine="true"
+        android:text=""
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <!--        style="?android:attr/spinnerItemStyle"-->
+    <!--    android:ellipsize="marquee"
+            android:textAlignment="inherit"-->
+    <!--   style="?android:attr/spinnerItemStyle"-->
+    <View
+        android:layout_width="10dp"
+        android:id="@+id/right_view"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    style="@style/Base_Home"
+    android:background="@color/transparent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/top_clay"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline_h_top"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.001"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline_close_top"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_xleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_xright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97" />
+    <com.jpndev.utilitylibrary.DeviceFitImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/close_dimv"
+        app:height_percentage="10"
+        app:width_percentage="10"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_close_top"
+        app:layout_constraintLeft_toRightOf="@+id/g_xleft"
+
+        android:tint="?attr/tint_1"
+        app:parameter="fixed_ratio"
+        android:visibility="visible"
+        android:src="@drawable/icn_back_1"
+
+        android:layout_height="wrap_content" />
+    <com.jpndev.utilitylibrary.DeviceFitImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/json_req_dimv"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_close_top"
+        app:layout_constraintLeft_toRightOf="@+id/close_dimv"
+        android:layout_marginTop="0dp"
+        android:visibility="gone"
+        android:layout_marginRight="4dp"
+
+
+        android:src="@drawable/ic_content_copy_black_24dp"
+        app:height_percentage="5"
+        app:width_percentage="6"
+        android:scaleType="fitCenter"
+        android:layout_height="wrap_content" />
+
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier_close"
+        app:constraint_referenced_ids="json_req_dimv,close_dimv"
+        app:barrierDirection="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nscv"
+        app:layout_constraintTop_toBottomOf="@+id/barrier_close"
+        app:layout_constraintLeft_toRightOf="@+id/g_xleft"
+        app:layout_constraintRight_toLeftOf="@+id/g_xright"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/Base_Home"
+
+
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/g_player_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.03" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/g_player_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.97" />
+            <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/g_h_top"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.001"/>
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/g_player_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.65" />
+
+    <LinearLayout
+
+app:layout_constraintTop_toBottomOf="@+id/g_h_top"
+        app:layout_constraintLeft_toRightOf="@+id/g_player_left"
+        app:layout_constraintRight_toLeftOf="@+id/g_player_right"
+        android:id="@+id/p1_llay"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:background="@drawable/shape_2_selector"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingRight="@dimen/_4sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+
+                style="@style/Base_TXV_1"
+                android:gravity="center_vertical"
+                android:id="@+id/team_1_txv"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/two_text"
+
+                />
+            <TextView
+
+                style="@style/Base_TXV_1"
+
+                android:visibility="invisible"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="19000"
+
+                />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/p1_name_txv"
+            style="@style/Base_TXV_1"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="0dp"
+            android:padding="0dp"
+            android:layout_width="wrap_content"
+
+
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sofia_pro_regular"
+            android:text="@string/mediuml_text"
+            android:maxLines="4"
+
+            android:textSize="@dimen/_12ssp"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/g_h_top"
+        app:layout_constraintLeft_toRightOf="@+id/g_player_right"
+        app:layout_constraintRight_toLeftOf="@+id/g_player_end"
+
+        android:id="@+id/p1_right_llay"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/captian1_rlay"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:background="@drawable/shape_2_selector"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingRight="@dimen/_4sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+
+            style="@style/Base_TXV_1"
+            android:gravity="center_vertical"
+            android:id="@+id/captian1_txv"
+android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/short_captian"
+
+            />
+            <TextView
+
+                style="@style/Base_TXV_1"
+
+       android:visibility="invisible"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="190"
+
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/vc_captian1_rlay"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:background="@drawable/shape_2_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingRight="@dimen/_4sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            >
+            <TextView
+
+                style="@style/Base_TXV_1"
+                android:padding="0dp"
+                android:gravity="center_vertical"
+                android:id="@+id/vc_captian1_txv"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/short_vccaptian"
+
+                />
+            <TextView
+
+                style="@style/Base_TXV_1"
+                android:padding="0dp"
+                android:visibility="invisible"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VC"
+
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier_player1"
+                app:constraint_referenced_ids="p1_right_llay,p1_llay"
+                app:barrierDirection="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    <View
+        app:layout_constraintTop_toBottomOf="@+id/barrier_player1"
+        android:id="@+id/line1"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/grey_color_1"
+        android:layout_width="match_parent"
+        android:layout_height="2sp"/>
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/line1"
+        app:layout_constraintLeft_toRightOf="@+id/g_player_left"
+        app:layout_constraintRight_toLeftOf="@+id/g_player_right"
+        android:id="@+id/p2_llay"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:background="@drawable/shape_2_selector"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingRight="@dimen/_4sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+
+                style="@style/Base_TXV_1"
+                android:gravity="center_vertical"
+                android:id="@+id/team_2_txv"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/two_text"
+
+                />
+            <TextView
+
+                style="@style/Base_TXV_1"
+
+                android:visibility="invisible"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="19000"
+
+                />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/p2_name_txv"
+            android:layout_marginTop="0dp"
+            android:layout_width="wrap_content"
+
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sofia_pro_regular"
+            android:text="@string/mediuml_text"
+            android:maxLines="4"
+            style="@style/Base_TXV_1"
+            android:padding="0dp"
+            android:textSize="@dimen/_12ssp"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/line1"
+        app:layout_constraintLeft_toRightOf="@+id/g_player_right"
+        app:layout_constraintRight_toLeftOf="@+id/g_player_end"
+
+        android:id="@+id/p2_right_llay"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:id="@+id/captian2_rlay"
+            android:background="@drawable/shape_2_selector"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingRight="@dimen/_4sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                style="@style/Base_TXV_1"
+                android:gravity="center_vertical"
+                android:id="@+id/captian2_txv"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/short_captian"
+
+                />
+            <TextView
+
+                style="@style/Base_TXV_1"
+
+                android:visibility="invisible"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="190"
+
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/vc_captian2_rlay"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:background="@drawable/shape_2_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingRight="@dimen/_4sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            >
+            <TextView
+
+                style="@style/Base_TXV_1"
+                android:padding="0dp"
+                android:gravity="center_vertical"
+                android:id="@+id/vc_captian2_txv"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/short_vccaptian"
+
+                />
+            <TextView
+
+                style="@style/Base_TXV_1"
+                android:padding="0dp"
+                android:visibility="invisible"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VC"
+
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier_player2"
+                app:constraint_referenced_ids="p2_right_llay,p2_llay"
+                app:barrierDirection="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <!--3333333333333333-->
+            <View
+                app:layout_constraintTop_toBottomOf="@+id/barrier_player2"
+                android:id="@+id/line2"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/grey_color_1"
+                android:layout_width="match_parent"
+                android:layout_height="2sp"/>
+
+            <LinearLayout
+                app:layout_constraintTop_toBottomOf="@+id/line2"
+                app:layout_constraintLeft_toRightOf="@+id/g_player_left"
+                app:layout_constraintRight_toLeftOf="@+id/g_player_right"
+                android:id="@+id/p3_llay"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:gravity="left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/shape_2_selector"
+
+                    android:paddingLeft="@dimen/_4sdp"
+                    android:paddingRight="@dimen/_4sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+
+                        style="@style/Base_TXV_1"
+                        android:gravity="center_vertical"
+                        android:id="@+id/team_3_txv"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/two_text"
+
+                        />
+                    <TextView
+
+                        style="@style/Base_TXV_1"
+
+                        android:visibility="invisible"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="19000"
+
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/p3_name_txv"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="wrap_content"
+
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofia_pro_regular"
+                    android:text="@string/mediuml_text"
+                    android:maxLines="4"
+                    style="@style/Base_TXV_1"
+                    android:padding="0dp"
+                    android:textSize="@dimen/_12ssp"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                app:layout_constraintTop_toBottomOf="@+id/line2"
+                app:layout_constraintLeft_toRightOf="@+id/g_player_right"
+                app:layout_constraintRight_toLeftOf="@+id/g_player_end"
+
+                android:id="@+id/p3_right_llay"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:gravity="left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/shape_2_selector"
+                    android:paddingLeft="@dimen/_4sdp"
+                    android:id="@+id/captian3_rlay"
+                    android:paddingRight="@dimen/_4sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        style="@style/Base_TXV_1"
+                        android:gravity="center_vertical"
+                        android:id="@+id/captian3_txv"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/short_captian"
+
+                        />
+                    <TextView
+
+                        style="@style/Base_TXV_1"
+
+                        android:visibility="invisible"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="190"
+
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/vc_captian3_rlay"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/shape_2_selector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_4sdp"
+                    android:paddingRight="@dimen/_4sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    >
+                    <TextView
+
+                        style="@style/Base_TXV_1"
+                        android:padding="0dp"
+                        android:gravity="center_vertical"
+                        android:id="@+id/vc_captian3_txv"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/short_vccaptian"
+
+                        />
+                    <TextView
+
+                        style="@style/Base_TXV_1"
+                        android:padding="0dp"
+                        android:visibility="invisible"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VC"
+
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier_player3"
+                app:constraint_referenced_ids="p3_right_llay,p3_llay"
+                app:barrierDirection="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    
+</androidx.constraintlayout.widget.ConstraintLayout>
